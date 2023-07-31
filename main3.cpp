@@ -45,5 +45,6 @@ int main () {
   cout<<" downstairs.\n "<<verb<<" down stairs to see if I could help "<<verb2<<" the dinner.\nMy mom said, see if "<<relative_name<<" needs a fresh "<<noun2<<endl;
   cout<<"So, I carried a tray of glass full of "<<liquid<<" in the "<<verb_ing <<" room."; 
   cout<<"When I got there I couldn't believe my "<<part_body<<" "<<part_of_body<<".There were "<<nouns<<" "<<verb_ing2<<" on the "<<noun2;
+  
   return 0;
 }
