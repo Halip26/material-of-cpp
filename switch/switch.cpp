@@ -3,7 +3,8 @@ using namespace std;
 
 int main() {
     int day;
-    cout << "Enter a integer between 1 to 7 to get the day of the week refering to the number: ";
+    cout << "Enter a integer between 1 to 7: ";
+    // cin is a statement that reads input the value entered
     cin >> day;
        switch (day) {
       case 1:
