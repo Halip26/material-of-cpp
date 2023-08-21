@@ -1,3 +1,5 @@
 .vscode/
 
 airline-boarding-system/
+
+*.exe
