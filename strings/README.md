@@ -1,4 +1,4 @@
-# The code you provided is checking whether a given word is a palindrome or not. Here is an explanation for each line of code:
+# The code you provided is checking whether a given word is a palindrome or not. Here is an explanation for each line of code
 
 ```#include <bits/stdc++.h>:``` This line includes the necessary standard library header files to handle input/output and string operations.
 
@@ -14,7 +14,7 @@
 
 ```string revWord = word;```: This line creates a new string variable revWord and assigns it the value of word. This will be used to store the reversed version of the word.
 
-```reverse(revWord.begin(), revWord.end());``` This line uses the reverse function from the <algorithm> library to reverse the characters in the revWord string.
+```reverse(revWord.begin(), revWord.end());``` This line uses the reverse function from the ```<algorithm>``` library to reverse the characters in the revWord string.
 
 ```if (word == revWord) {```: This line checks if the original word is equal to the reversed word. If they are equal, it means the word is a palindrome.
 
