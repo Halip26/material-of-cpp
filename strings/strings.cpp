@@ -1,26 +1,24 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
+int main() {
+
 	string word;
-	cout<<"Enter a word to check for palindrome(input uppercase or lowercase): ";
+	cout<<"Enter a word to check for palindrome: ";
 	cin>>word;
 	
 	string revWord = word;
 
-	// Reverse the string P
+	// Reverse the string Palindrome
 	reverse(revWord.begin(), revWord.end());
 
-	// If S is equal to P
+	// If word is equal to revWord
 	if (word == revWord) {
 		// Return "Yes"
-		cout<< "Yes, entered word is a palindrome!";
-	}
-	// Otherwise
-	if (word != revWord) {
+		cout<< "Yes, inputted word is a palindrome!";
+	} else {
 		// return "No"
-		cout<< "No, entered word is not a palindrome!";
+		cout<< "No, inputted word is not a palindrome!";
 	}
 
 	return 0;
