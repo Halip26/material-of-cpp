@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 	string word;
-	cout<<"Enter a word to check for palindrome(Either in uppercase or lowercase): ";
+	cout<<"Enter a word to check for palindrome(input uppercase or lowercase): ";
 	cin>>word;
 	
 	string revWord = word;
@@ -18,7 +18,7 @@ int main()
 		cout<< "Yes, entered word is a palindrome!";
 	}
 	// Otherwise
-	if (word !=revWord) {
+	if (word != revWord) {
 		// return "No"
 		cout<< "No, entered word is not a palindrome!";
 	}
