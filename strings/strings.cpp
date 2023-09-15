@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 
-	string word;
+	string word = "";
 	cout<<"Enter a word to check for palindrome: ";
 	cin>>word;
 	
