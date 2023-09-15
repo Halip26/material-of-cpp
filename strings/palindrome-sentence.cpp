@@ -1,27 +1,24 @@
-#include <bits/stdc++.h> 
-using namespace std;
+#include <iostream>
+#include <algorithm>
+#include <string>
 
 int main() {
+    std::string sentence = "";
+    std::cout << "Enter a sentence to check for palindrome: ";
+    getline(std::cin, sentence);
 
-	string sentence = "";
-	cout<<"Enter a sentence to check for palindrome: ";
-	getline(cin, sentence);
-	
-	string reverseSentence = sentence;
+    // Remove spaces from the string
+    sentence.erase(std::remove(sentence.begin(), sentence.end(), ' '), sentence.end());
 
-	// Remove spaces from the string
-	sentence.erase(remove(sentence.begin(), sentence.end(), ' '), sentence.end());
-	reverse(reverseSentence.begin(), reverseSentence.end());
+    std::string reverseSentence = sentence;
+    std::reverse(reverseSentence.begin(), reverseSentence.end());
 
-	// If sentence is equal to reverseSentence
-	if (sentence == reverseSentence) {
-			// Return "Yes"
-			cout<< "Yes, inputted sentence is a palindrome!";
-	} else {
-			// return "No"
-			cout<< "No, inputted sentence is not a palindrome!";
-	}
+    // If sentence is equal to reverseSentence
+    if (sentence == reverseSentence) {
+        std::cout << "Yes, inputted sentence is a palindrome!";
+    } else {
+        std::cout << "No, inputted sentence is not a palindrome!";
+    }
 
-	return 0;
-	
+    return 0;
 }
