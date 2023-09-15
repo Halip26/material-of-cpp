@@ -1,8 +1,9 @@
-// the concepts in maths & conditionals we have studied till now
+// the concepts in maths & conditionals
 #include <iostream>
 using namespace std;
 
-int main() {    
+int main() {  
+
     float n1, n2, n3;
 
     cout << "Enter three numbers: ";
