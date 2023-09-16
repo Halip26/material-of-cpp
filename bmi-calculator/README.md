@@ -19,3 +19,7 @@ Tanda "kurung kurang siku dua kali" dalam kode C++ yang diberikan adalah operato
 ## Penjelesan tentang "endl"
 
 endl adalah manipulator yang digunakan dalam bahasa pemrograman C++ untuk memindahkan kursor ke baris baru dan mengosongkan buffer output. Ketika digunakan dalam kode, endl akan membuat baris baru setelah teks atau data yang terakhir ditampilkan.
+
+## Penjelesan tentang cin >>
+
+Dalam bahasa C++, cin >> digunakan untuk membaca input dari pengguna atau dari file. Data yang dibaca menggunakan operator ekstraksi (>>) kemudian disimpan ke dalam variabel atau digunakan langsung dalam program.
