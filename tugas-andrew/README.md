@@ -98,3 +98,40 @@ MULAI
 SELESAI
 
 ```
+
+## Tugas 4
+
+- Kodenya :
+
+```c++
+    bool sakit;
+    cout<<"Apakah Mahasiswa sakit: ";
+    cin>>sakit;
+
+    if (sakit) {
+        cout << "Mahasiswa ijin tidak masuk" << endl;
+    } else {
+        cout << "Mahasiswa masuk" << endl;
+    }
+
+    return 0;
+```
+
+- Pseudocodenya :
+
+```text
+MULAI
+    DEKLARASI sakit SEBAGAI Boolean
+
+    TAMPILKAN "Apakah Mahasiswa sakit: "
+    MENGAMBIL INPUT dari pengguna dan SIMPAN ke dalam variabel sakit
+
+    JIKA sakit BENAR MAKA
+        TAMPILKAN "Mahasiswa ijin tidak masuk"
+    LAINNYA
+        TAMPILKAN "Mahasiswa masuk"
+
+    KEMBALIKAN 0
+SELESAI
+
+```
