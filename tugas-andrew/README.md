@@ -73,17 +73,10 @@ SELESAI
 - Kodenya :
 
 ```c++
-    bool sakit;
-    cout<<"Apakah Mahasiswa sakit: ";
-    cin>>sakit;
-
-    if (sakit) {
-        cout << "Mahasiswa ijin tidak masuk" << endl;
-    } else {
-        cout << "Mahasiswa masuk" << endl;
-    }
-
-    return 0;
+  string Firstsentence = "today i am eating in a mall";
+  string Secondsentence = "with my friend";
+  string Fullsentence = Firstsentence + " " + Secondsentence;
+  cout << Fullsentence;
 ```
 
 - Pseudocodenya :
