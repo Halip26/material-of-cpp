@@ -67,3 +67,34 @@ MULAI
 SELESAI
 
 ```
+
+## Tugas 3
+
+- Kodenya :
+
+```c++
+  string Firstsentence = "today i am eating in a mall";
+  string Secondsentence = "with my friend";
+  string Fullsentence = Firstsentence + " " + Secondsentence;
+  cout << Fullsentence;
+```
+
+- Pseudocodenya :
+
+```text
+MULAI
+    DEKLARASI Firstsentence SEBAGAI String
+    DEKLARASI Secondsentence SEBAGAI String
+    DEKLARASI Fullsentence SEBAGAI String
+
+    SET Firstsentence MENJADI "today i am eating in a mall"
+    SET Secondsentence MENJADI "with my friend"
+
+    SET Fullsentence MENJADI Firstsentence ditambahkan dengan spasi dan diikuti oleh Secondsentence
+
+    TAMPILKAN Fullsentence
+
+    KEMBALIKAN 0
+SELESAI
+
+```
