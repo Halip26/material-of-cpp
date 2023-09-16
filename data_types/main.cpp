@@ -8,7 +8,7 @@ int main () {
   float myFloatNum = 5.99;     // Floating point number
   double myDoubleNum = 9.98;   // Floating point number
   char myLetter = 'D';         // Character
-  bool myBoolean = true;       // Boolean
+  bool myBoolean = false;      // Boolean
   string myString = "Hello";   // String
    
   // Print variable values
