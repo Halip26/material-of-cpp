@@ -3,16 +3,22 @@
 using namespace std;
 
 int main() {
-  double marks;
+  double examValue;
 
   cout << "Enter your marks: ";
-  cin >> marks;
+  cin >> examValue;
 
-  // ternary operator checks if
-  // marks is greater than 40
-  string result = (marks >= 40) ? "passed" : "failed";
+  // ternary operator checks if, examValue is greater than 40
+  string result = (examValue >= 40) ? "passed" : "failed";
 
   cout << "You " << result << " the exam.";
+
+  // this used if else statement
+  // if  (marks >= 40){
+  //   cout << "You Passed the exam";
+  // } else {
+  //   cout << "You Failed the exam";
+  // }
 
   return 0;
 }
