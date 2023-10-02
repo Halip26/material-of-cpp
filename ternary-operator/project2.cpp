@@ -7,8 +7,8 @@ int main() {
   double vehicle_speed;
   double speed_limit;
   
-  cout<<"Enter speed limit in your state: ";
-  cin>>speed_limit;
+  cout << "Enter speed limit in your state: ";
+  cin >> speed_limit;
   
   cout << "Enter instantenous speed of the vehicle: ";
   cin >> vehicle_speed;
