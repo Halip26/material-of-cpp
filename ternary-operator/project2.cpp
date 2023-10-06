@@ -1,4 +1,4 @@
-//overspeeding evluation program
+//overspeeding evaluation program
 #include <iostream>
 #include <string>
 using namespace std;
@@ -7,13 +7,13 @@ int main() {
   double vehicle_speed;
   double speed_limit;
   
-  cout << "Enter speed limit in your state: ";
+  cout << "Masukkan batas kecepatan di negara bagian Anda: ";
   cin >> speed_limit;
   
-  cout << "Enter instantenous speed of the vehicle: ";
+  cout << "Memasukkan kecepatan seketika kendaraan: ";
   cin >> vehicle_speed;
 
-  string result = (vehicle_speed >= speed_limit) ? "You are overspeeding, a fine has been issued in your vehicle registration number!" : "Have a safe trip, sorry for inconvinience!";
+  string result = (vehicle_speed >= speed_limit) ? "Anda melebihi batas kecepatan, denda telah dikeluarkan di STNK Anda!" : "Semoga perjalanan Anda aman, maaf atas ketidaknyamanannya!";
 
   cout << result;
   
