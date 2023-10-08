@@ -4,26 +4,26 @@ using namespace std;
 
 int main() {
     string name;
-    int std;
-    string ans, trial_ans;
+    int grade;
+    string answer, trial_answer;
     
     cout << "Enter your name : ";
     cin >> name;
     cout << "\nIn which class do you study(1-12): ";
-    cin >> std;
+    cin >> grade;
     
     cout << "\nAre you enrolled in BrightChamps?\nEnter Yes or No : ";
-    cin >> ans;
+    cin >> answer;
     
-    if ( ans == "Yes" ){
+    if ( answer == "Yes" || answer == "yes"){
         
-        if(std ==1 || std == 2 ){
+        if(grade ==1 || grade == 2 ){
             cout<<"\nWelcome, "<<name<<", You are in Little champs";
         }
-        else if(3<=std && std<=6){
+        else if(3<=grade && grade<=6){
             cout<<"\nWelcome, "<<name<<", You are in Junior champs";
         }
-        else if(7<=std && std<=12){
+        else if(7<=grade && grade<=12){
             cout<<"\nWelcome, "<<name<<", You are in Senior champs";
         }
         else{
@@ -31,20 +31,20 @@ int main() {
             exit(0);
         }
     }
-    else if ( ans == "No" ){
+    else if ( answer == "No" || answer == "no"){
         
         cout<<"\nDo you want to enroll for a trial class(Yes/No): ";
-        cin>>trial_ans;
+        cin>>trial_answer;
         
-        if(trial_ans == "Yes"){
+        if(trial_answer == "Yes" || trial_answer == "yes"){
             
-            if(std ==1 || std == 2 ){
+            if(grade ==1 || grade == 2 ){
                 cout<<"\nWelcome, "<<name<<", You will try Little champs course";
             }
-            else if(3<=std && std<=6){
+            else if(3<=grade && grade<=6){
                 cout<<"\nWelcome, "<<name<<", You will try Junior champs course";
             }
-            else if(7<=std && std<=12){
+            else if(7<=grade && grade<=12){
                 cout<<"\nWelcome, "<<name<<", You will try Senior champs course";
             }
             else{
@@ -53,7 +53,7 @@ int main() {
             }
         }
         
-        else if (trial_ans == "No"){
+        else if (trial_answer == "No" || trial_answer == "no"){
             cout<<"Thank you for visiting the program, it will exit now!";
             exit(0);
         }
