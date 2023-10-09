@@ -17,7 +17,7 @@ int main() {
     
     if ( answer == "Yes" || answer == "yes"){
         
-        if(grade ==1 || grade == 2 ){
+        if(grade == 1 || grade == 2 ){
             cout<<"\nWelcome, "<<name<<", You are in Little champs";
         }
         else if(3<=grade && grade<=6){
@@ -39,13 +39,13 @@ int main() {
         if(trial_answer == "Yes" || trial_answer == "yes"){
             
             if(grade ==1 || grade == 2 ){
-                cout<<"\nWelcome, "<<name<<", You will try Little champs course";
+                cout<<"\nWelcome, "<<name<<", You will try Little champs trial course";
             }
             else if(3<=grade && grade<=6){
-                cout<<"\nWelcome, "<<name<<", You will try Junior champs course";
+                cout<<"\nWelcome, "<<name<<", You will try Junior champs trial course";
             }
             else if(7<=grade && grade<=12){
-                cout<<"\nWelcome, "<<name<<", You will try Senior champs course";
+                cout<<"\nWelcome, "<<name<<", You will try Senior champs trial course";
             }
             else{
                 cout<<"\nYou have input an invalid class, program will exit now!";

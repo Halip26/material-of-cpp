@@ -1,6 +1,6 @@
 # Penjelesan tentang ```#include <iostream>``` & ```using namespace std```
 
-Berdasarkan kode yang Anda berikan, terdapat perintah ```#include <iostream>```. Pada C++ ini adalah preprocessor directive yang digunakan untuk memberitahu kompiler agar menyertakan file header iostream ke dalam program.
+```#include <iostream>``` Pada C++ ini adalah preprocessor directive yang digunakan untuk memberitahu kompiler agar menyertakan file header iostream ke dalam program.
 
 File header ```<iostream>``` merupakan bagian dari Library Standar C++. File tersebut berisi definisi untuk standar input dan output dalam bahasa C++, seperti objek cin (untuk input) dan cout (untuk output). Dengan menggunakan include directive tersebut, program C++ dapat menggunakan fitur-fitur ini tanpa harus menulis definisinya sendiri.
 
