@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 int main() {
@@ -41,16 +40,16 @@ int main() {
   cout << "Nilai tertinggi adalah: " << highest_score << endl;
   cout << "Nilai terendah adalah: " << lowest_score << endl;
 
-  // 3.Periksa apakah Budi pernah mendapatkan nilai 7 dan pada berapa banyak ujian dia mendapatkan nilai tersebut?
-  int number_of_tests_budi_got_7 = 0;
-  for (int i = 0; i < 5; i++) {
+  // 3.Periksa apakah Budi mendapatkan niai 7 dan pada berpa banyak dia mendapatkannya
+  int budi_got_7 = 0;
+  for (int i = 0; i < 10; i++) {
     if (budi_test_scores[i] == 7) {
-      number_of_tests_budi_got_7++;
+      budi_got_7++;
     }
   }
 
-  // Cetak hasilnya
-  cout << "Budi mendapatkan nilai 7 pada " << number_of_tests_budi_got_7 << " ujian." << endl;
+  // cetak hasilnya
+  cout << "Budi mendapatkan nilai 7 pada " << budi_got_7 << " hasil ujian" << endl;
 
   // 4.Urutkan nilai ujian dalam urutan menurun
   for (int i = 0; i < 4; i++) {
@@ -63,21 +62,23 @@ int main() {
     }
   }
 
-  // Cetak nilai ujian yang sudah diurutkan
-  cout << "Nilai ujian yang sudah diurutkan adalah: ";
+  // cetak nilai ujian yg sudah diurutkan dari tertinggi ke terendah
+  cout << "Nilai ujian yg sudah diurutkan adalah: ";
   for (int score : budi_test_scores) {
     cout << score << " ";
   }
   cout << endl;
 
   // 5.Buatlah sebuah array untuk menyimpan string "Pradita, my lovely campus"
-  string pradita_campus[] = {"Pradita", "my", "lovely", "campus"};
+  string pradita_campus[] = {"Pradita,", "my", "lovely", "campus"};
 
   // Cetak array
   for (string word : pradita_campus) {
     cout << word << " ";
   }
+
   cout << endl;
+
 
   return 0;
 }

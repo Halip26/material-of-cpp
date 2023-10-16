@@ -9,7 +9,10 @@ int main() {
     float age;
 
     cout << "Enter your name: ";
-    getline(cin, name);
+    cin >> name;
+
+    cout << "Enter your age: ";
+    cin >> age;
     
     cout << "\nWelcome " << name << ", to Corona Checking Centre,\nIt is mandatory to get checked for corona symptoms before you board the flight!" << endl;
     cout << "Enter the following details with full honesty to generate your report" << endl;
@@ -18,22 +21,22 @@ int main() {
     
     cout << "\n1. Have you been feeling feverish since past few days?: ";
     cin >> fever;
-    
     cout << "\n2. Have you been feeling loss of taste since past few days?: ";
     cin >> loss_of_taste;
-    
     cout << "\n3. Have you been feeling loss of smell since past few days?: ";
     cin >> loss_of_smell;
-    
     cout << "\n4. Are you having cough problem since past few days?: ";
     cin >> cough;
-    
     cout << "\n5. Have you been tired since past few days?: ";
     cin >> tiredness;
-    
     result = (fever && (loss_of_taste || loss_of_smell) && cough && tiredness);
-    
-    cout << "\nCorona Positive(0 : NO / 1 : YES): " << result << "\n\n";
+    if (result == 0 ) {
+        cout << "\nCorona Positive, No (0) or Yes (1) = " << "No" << "\n\n";
+    }
+    else {
+        cout << "\nCorona Positive, No (0) or Yes (1) = " << "Yes" << "\n\n";
+    }
+
 
     if (result == 0) {
         cout << "\nDo you have valid tickets?: ";
