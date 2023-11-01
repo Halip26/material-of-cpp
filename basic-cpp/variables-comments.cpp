@@ -16,7 +16,7 @@ int main() {
 
   const int hoursPerDay = 24; 
 
-  /* Since this value is contant, we can do the same other fixed values!*/
+  /* Since this value is contant, we can do the same other fixed values! */
   cout << "There are "<< hoursPerDay <<" hours in a day\n";
   
   int myAge = 16;
