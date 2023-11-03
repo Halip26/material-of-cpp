@@ -9,7 +9,7 @@ int main() {
   
   // Good identifier name 
   int minutesPerHour = 60;
-  int s = 60; // OK, but not so easy to understand what m actually is
+  int s = 60;
   
   cout << "There are "<< minutesPerHour <<" minutes per hour\n";
   cout << "There are "<< s <<" seconds in a minute\n";
