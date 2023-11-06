@@ -1,3 +1,4 @@
+// import all the libraries
 #include <iostream>
 #include <string>
 using namespace std;
@@ -9,7 +10,7 @@ int main () {
   double myDoubleNum = 9.98;   // Floating point number
   char myLetter = 'D';         // Character
   bool myBoolean = false;      // Boolean
-  string myString = "Hello";   // String
+  string myString = "Hello, guys";   // String
    
   // Print variable values
   cout << "int: " << myNum << "\t\t\t" << "Size of Int: " << sizeof(myNum)<< " bytes" << "\n";

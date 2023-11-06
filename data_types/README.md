@@ -15,3 +15,11 @@ Tipe data double dalam pemrograman merupakan tipe data yang digunakan untuk meny
 ## Penjelasan tentang "<<" & ">>"
 
 Tanda "kurung kurang siku dua kali" dalam kode C++ yang diberikan adalah operator perpangkatan.
+
+## return 0
+
+Baris return 0; digunakan dalam fungsi utama program C++ untuk mengindikasikan keberhasilan eksekusi program.
+
+Dalam C++, fungsi utama bertipe int dan diharapkan untuk mengembalikan nilai integer yang menunjukkan status keluar dari program. Berdasarkan konvensi, nilai pengembalian 0 biasanya menunjukkan eksekusi yang berhasil, sementara nilai bukan nol menunjukkan kesalahan atau penghentian yang tidak normal.
+
+Dalam kode yang diberikan, return 0; digunakan pada akhir fungsi utama untuk menunjukkan bahwa program telah dieksekusi tanpa kesalahan dan keluar dengan status berhasil.
