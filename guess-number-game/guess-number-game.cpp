@@ -2,35 +2,43 @@
 #include <cstdlib>
 #include <ctime>
 
+using namespace std;
+
 int main() {
     srand(time(0));
     int number = rand() % 99 + 1;
-    std::string name;
-    std::cout << "Enter your name: ";
-    std::cin >> name;
-    int max_attempts = 5;
+    string name;
+    
+    cout << "Enter your name: ";
+    cin >> name;
+    
+    int max_attempts;
+    cout << "Enter attempt that you want: ";
+    cin >> max_attempts;
     int attempts = 0;
     
     while (attempts < max_attempts) {
         int guess;
-        std::cout << "Enter a number from 1 to 99: ";
-        std::cin >> guess;
+        cout << "Enter a number from 1 to 99: ";
+        cin >> guess;
         
         if (guess < number) {
-            std::cout << "Guess is low" << std::endl;
-        } else if (guess > number) {
-            std::cout << "Guess is high" << std::endl;
-        } else {
-            std::cout << "Congratulations " << name << "! You guessed it!" << std::endl;
+            cout << "Guess is low" << endl;
+        }
+        else if (guess > number) {
+            cout << "Guess is high" << endl;
+        }
+        else {
+            cout << "Congratulations " << name << "! You guessed it!" << endl;
             break;
         }
         
         attempts++;
-        std::cout << "Attempts remaining: " << max_attempts - attempts << std::endl << std::endl;
+        cout << "Attempts remaining: " << max_attempts - attempts << endl << endl;
     }
     
     if (attempts == max_attempts) {
-        std::cout << "Out of attempts, You Lost. The number was " << number << std::endl;
+        cout << "Out of attempts, You Lost. The number was " << number << endl;
     }
     
     return 0;
