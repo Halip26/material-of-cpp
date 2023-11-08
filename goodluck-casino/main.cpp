@@ -3,20 +3,21 @@
 using namespace std;
 
 int main() {
-
+  // multiple declaration of variables
   string name, continue_answer, token_buy_answer;
   int age, balance_amount, bet_amount, dice, guess;
   srand(time(0));
 
   cout << "Please enter your name: ";
+  // alternative ways to input the value of var
   getline(cin, name);
 
-  cout << "Welcome, " << name << " to the Goodluck Casino, Enter your age to continue further: ";
+  cout << "Welcome, " << name << " to the Goodluck Casino, \nEnter your age to continue further: ";
   cin >> age;
 
   if (12 < age && age < 18) {
     cout << "\nYou are eligible for tier 1 game\n";
-    cout << "\nWould you like to continue(Enter YES to continue):  ";
+    cout << "\nWould you like to continue(Enter YES to continue): ";
     cin >> continue_answer;
     if (continue_answer == "YES") {
       cout << "\nTo play the game you'll have to purachase 500 tokens for 50 dollars. Do you accept(Enter YES to confirm): ";
