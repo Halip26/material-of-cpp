@@ -1,14 +1,15 @@
 // C++ program to sizes of data types
 #include<iostream>
+
 using namespace std;
 
-char nama = 'h';
-string namaAku = "Halipuddin";
-
 int main() {
+	char awalanNama = 'h';
+	string namaAku = "Halipuddin";
+
 	cout << "Size of string : " << sizeof(namaAku)
 	<< " byte" << endl;
-	cout << "Size of char : " << sizeof(nama)
+	cout << "Size of char : " << sizeof(awalanNama)
 	<< " byte" << endl;
 	cout << "Size of int : " << sizeof(int)
 	<< " bytes" << endl;

@@ -1,6 +1,7 @@
-//Mad Libs Game
+// Mad Libs Game
 #include <iostream>
 #include <string>
+
 using namespace std;
  
 int main () {
@@ -30,7 +31,7 @@ int main () {
   cin>>liquid;
   cout<<"Enter a verb ending in ing\n";
   cin>>verb_ing;
-  cout<<"Enter a any +ve number int or float\n";
+  cout<<"Enter a any + ve number int or float\n";
   cin>>part_body;
   cout<<"Enter part of body(plural)\n";
   cin>>part_of_body;

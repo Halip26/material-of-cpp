@@ -5,7 +5,7 @@ int main() {
   // inisialized 3 variables 
   string name;
   float age;
-  int study; 
+  int study;
 
   // asks the user to enter input to each variable
   cout << "Type your first name: ";
