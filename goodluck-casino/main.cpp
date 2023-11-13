@@ -19,10 +19,10 @@ int main() {
     cout << "\nYou are eligible for tier 1 game\n";
     cout << "\nWould you like to continue(Enter YES to continue): ";
     cin >> continue_answer;
-    if (continue_answer == "YES") {
+    if (continue_answer == "YES" or continue_answer == "yes") {
       cout << "\nTo play the game you'll have to purachase 500 tokens for 50 dollars. Do you accept(Enter YES to confirm): ";
       cin >> token_buy_answer;
-      if (token_buy_answer == "YES") {
+      if (token_buy_answer == "YES" or continue_answer == "yes") {
         balance_amount = 500;
         cout << "\nThanks for your purchase, how much you want to bet on the game. Amount should be <" << balance_amount << endl;
         cout << "Bet amount: ";
