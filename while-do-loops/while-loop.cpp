@@ -1,21 +1,15 @@
-// Project Name : SC_While Loop_Multiplication Tables
-// Program to print multiplication tables
-
 #include <iostream>
 using namespace std;
- 
+
 int main() {
-    int num;
+    
+  int num = 1;
 
-    cout << "Enter the number to print table: ";
-    cin >> num;
-    int i = 1;
+  while (num <= 10) {
+    cout << "Nomor "<< num << endl;
+    num++;
+  }
 
-    while (i <= 10) {
-        cout << num << " x " << i << " = " << num * i << endl;
-        i++;
-    }
-
-    return 0;
+  return 0;
 
 }
