@@ -23,6 +23,7 @@ int main() {
     // Variabel lokal di stack
     int local_var = 10;
 
+    global_uninitialized_var = 36;
     printf("Variabel global dengan inisialisasi: %d\n", global_initialized_var);
     printf("Variabel global tanpa inisialisasi: %d\n", global_uninitialized_var); // Akan memiliki nilai nol
     printf("Variabel lokal di stack: %d\n", local_var);
@@ -36,7 +37,7 @@ int main() {
 /* c++ 
 
 #include <iostream>
-
+using namespace std;
 // Variabel global dengan inisialisasi
 int global_initialized_var = 42;
 
