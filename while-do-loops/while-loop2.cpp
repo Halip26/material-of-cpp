@@ -7,7 +7,9 @@ input when a negative number is provided
 using namespace std;
 
 int main() {
+    // variable without initialization value 
     int number;
+    // vvarible with initialization 
     int sum = 0;
 
     cout << "Enter a number: ";

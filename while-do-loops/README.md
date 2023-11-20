@@ -16,12 +16,13 @@ Contoh:
 
 ```C++
 # include <iostream>
+using namespace std;
 
 int main() {
   int i = 0;
 
   while (i < 10) {
-    std::cout << i << std::endl;
+    cout << i << endl;
     i++;
   }
 
@@ -54,11 +55,13 @@ Contoh:
 ```C++
 #include <iostream>
 
+using namespace std;
+
 int main() {
   int i = 0;
 
   do {
-    std::cout << i << std::endl;
+    cout << i << endl;
     i++;
   } while (i < 0);
 

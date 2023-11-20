@@ -12,7 +12,7 @@ int main() {
     int i = 1;
 
     while (i <= 10) {
-        cout << num << " x " << i << " = " << num * i << endl;
+        cout << i << " x " << num << " = " << num * i << endl;
         i++;
     }
 
