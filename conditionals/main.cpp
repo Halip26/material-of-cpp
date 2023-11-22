@@ -4,25 +4,30 @@ using namespace std;
 
 int main() {
 
+  // initialize variables with value
   string username = "Brightchamps";
-  string password = "hari_senin";
-  string uname, pass;
-  cout << "Enter your username: ";
-  cin >> uname;
-  cout << "Enter your password: ";
-  cin >> pass;
+  string password = "hari_rabu";
 
-  if (username == uname && password == pass) {
-    cout << "Hi and welcome to your account! "<<username<<endl;
+  // bss stands for block started by symbol
+  string uname_input, pass_input;
+
+  cout << "Enter your username: ";
+  cin >> uname_input;
+  cout << "Enter your password: ";
+  cin >> pass_input;
+
+  if (username == uname_input && password == pass_input) {
+    cout << "Hi & welcome to your account! "<<username<<endl;
   }
-  else if (username != uname && password == pass) {
+  else if (username != uname_input && password == pass_input) {
     cout << "Wrong username. Try again!\n ";
   }
-  else if (username == uname && password != pass) {
+  else if (username == uname_input && password != pass_input) {
     cout << "Wrong password. Try again!\n";
   }
   else {
     cout << "Username & Password doesn't exist\n";
   }
+  
   return 0;
 }
