@@ -18,7 +18,5 @@ int main() {
     cout << "You entered 0." << endl;
   }
 
-  cout << "This line is out of conditional, So, this line is always printed.";
-
   return 0;
 }
