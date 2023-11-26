@@ -1,7 +1,7 @@
 {
   "files.associations": {
-    "*.embeddedhtml": "html",
     "*.mdx": "markdown",
+    "*.embeddedhtml": "html",
     "iostream": "cpp",
     "ostream": "cpp",
     "any": "cpp",
@@ -92,7 +92,8 @@
     "typeindex": "cpp",
     "typeinfo": "cpp",
     "valarray": "cpp",
-    "variant": "cpp"
+    "variant": "cpp",
+    "AND.C": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }

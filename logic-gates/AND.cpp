@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
-//C++ program to implement AND Logical Operators
+// C++ program to implement AND Logical Operators
 int main() {
     int a = 15;
     int b = 19;
     
     // AND = && , OR = ||
     // false && false = false
-    cout << ((a == 0) && (a > b)) << endl;
+    cout << ((a == 0) && (a > b)) << endl; 
   
     // false && true = false
     cout << ((a == 0) && (a < b)) << endl;
