@@ -1,26 +1,38 @@
 #include <iostream>
+#include <cmath>
+
 using namespace std;
 
+// ini fungsi global
+bool isPrime(int number) {
+  if (number < 2) {
+    return false;
+  }
+
+  for (int i = 2; i <= sqrt(number); i++){
+    if (number % i == 0){
+      return false;
+    }
+  }
+
+  return true;
+}
+
+// ini fungsi utama
 int main() {
   while (true) {
     int number;
-    cout << "Enter the number, for prime number test: ";
+    cout << "Enter for prime number test (enter 0 to exit): ";
     cin >> number;
 
-    if (number >= 2) {
-      for (int i = 2; i <= number / 2; i += 2) {
-        if (number % i == 0) {
-          cout << number << " is divisible by " << i << endl;
-          cout << "Hence, it is not a prime number" << endl;
-          break;
-        }
-      }
-      if (i > number / 2) {
-        cout << number << " is divisible just by 1 & itself" << endl;
-        cout << "Hence, it is a prime number" << endl;
-      }
+    if (number == 0) {
+      break;
+    }
+
+    if (isPrime(number)) {
+      cout << number << " is a prime number." << endl;
     } else {
-      cout << number << " is not a valid input for prime number test" << endl;
+      cout << number << " is not a prime number" << endl;
     }
   }
 
