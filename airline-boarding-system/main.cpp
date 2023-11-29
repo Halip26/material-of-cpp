@@ -16,7 +16,7 @@ int main() {
     
     cout << "\nWelcome " << name << ", to Corona Checking Centre,\nIt is mandatory to get checked for corona symptoms before you board the flight!" << endl;
     cout << "Enter the following details with full honesty to generate your report" << endl;
-    cout << "Instructions for users: Enter 0 for NO and 1 for YES" << endl;
+    cout << "Instructions for users: Enter (0) for NO and (1) for YES" << endl;
     cout << "---------------------------------------------------" << endl;
     
     cout << "\n1. Have you been feeling feverish since past few days?: ";
@@ -39,6 +39,7 @@ int main() {
 
 
     if (result == 0) {
+        cout << "Answer with No (0) or Yes (1)";
         cout << "\nDo you have valid tickets?: ";
         cin >> tickets;
         

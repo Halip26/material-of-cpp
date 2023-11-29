@@ -19,9 +19,9 @@ int main() {
     else if ((number < 0) && ((number % 2 ) == 0 )) {
       cout << "the number " << number << " is even negative." << endl;
     } 
-    else if ((number < 0) && ((number % 2 )<= -1)) {
+    else if ((number < 0) && ((number % 2 ) <= 1)) {
       cout << "the number " << number << " is odd negative." << endl;
-    } 
+    }
     
     else {
       cout << "Program is stop, you entered 0!" << endl;
