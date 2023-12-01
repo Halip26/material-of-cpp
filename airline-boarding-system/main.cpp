@@ -31,10 +31,10 @@ int main() {
     cin >> tiredness;
     result = (fever && (loss_of_taste || loss_of_smell) && cough && tiredness);
     if (result == 0 ) {
-        cout << "\nCorona Positive, No (0) or Yes (1) = " << "No" << "\n\n";
+        cout << "\nCorona Positive, No or Yes? " << "No" << "\n\n";
     }
     else {
-        cout << "\nCorona Positive, No (0) or Yes (1) = " << "Yes" << "\n\n";
+        cout << "\nCorona Positive, No or Yes? " << "Yes" << "\n\n";
     }
 
 
