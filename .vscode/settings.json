@@ -93,7 +93,8 @@
     "typeinfo": "cpp",
     "valarray": "cpp",
     "variant": "cpp",
-    "AND.C": "cpp"
+    "AND.C": "cpp",
+    "NOT.C": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
