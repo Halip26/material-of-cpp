@@ -1,5 +1,5 @@
 // C++ program to find the sum of first n natural numbers with user limit on sum value 
-// program untuk mencari jumlah n bilangan asli pertama dengan batas pengguna pada nilai penjumlahan
+// program C++ untuk mencari jumlah n bilangan asli pertama dengan batas pengguna pada nilai penjumlahan
 
 #include <iostream>
 

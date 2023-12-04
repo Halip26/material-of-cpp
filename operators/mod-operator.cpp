@@ -4,7 +4,8 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
 
   // To store dividend and divisor
   int dividend, divisor;
