@@ -5,7 +5,8 @@
 using namespace std;
 
 // Driver Code
-int main() {
+int main()
+{
   int x = 10, a;
   int y = 18, b;
 
@@ -31,3 +32,4 @@ int main() {
 
   return 0;
 }
+a
