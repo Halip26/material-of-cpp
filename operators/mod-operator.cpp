@@ -6,7 +6,6 @@ using namespace std;
 
 int main()
 {
-
   // To store dividend and divisor
   int dividend, divisor;
   // To store reamider and quotient
