@@ -3,7 +3,8 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
     bool fever, loss_of_taste, loss_of_smell, cough, tiredness, result, tickets, luggage;
     string name;
     float age;
@@ -13,12 +14,12 @@ int main() {
 
     cout << "Enter your age: ";
     cin >> age;
-    
+
     cout << "\nWelcome " << name << ", to Corona Checking Centre,\nIt is mandatory to get checked for corona symptoms before you board the flight!" << endl;
     cout << "Enter the following details with full honesty to generate your report" << endl;
     cout << "Instructions for users: Enter (0) for NO and (1) for YES" << endl;
     cout << "---------------------------------------------------" << endl;
-    
+
     cout << "\n1. Have you been feeling feverish since past few days?: ";
     cin >> fever;
     cout << "\n2. Have you been feeling loss of taste since past few days?: ";
@@ -30,33 +31,43 @@ int main() {
     cout << "\n5. Have you been tired since past few days?: ";
     cin >> tiredness;
     result = (fever && (loss_of_taste || loss_of_smell) && cough && tiredness);
-    if (result == 0 ) {
-        cout << "\nCorona Positive, No or Yes? " << "No" << "\n\n";
+
+    if (result == 0)
+    {
+        cout << "\nCorona Positive, No or Yes? "
+             << "No"
+             << "\n\n";
     }
-    else {
-        cout << "\nCorona Positive, No or Yes? " << "Yes" << "\n\n";
+    else
+    {
+        cout << "\nCorona Positive, No or Yes? "
+             << "Yes"
+             << "\n\n";
     }
 
-
-    if (result == 0) {
+    if (result == 0)
+    {
         cout << "Answer with No (0) or Yes (1)";
         cout << "\nDo you have valid tickets?: ";
         cin >> tickets;
-        
+
         cout << "\nDo you want your luggage checked in?: ";
         cin >> luggage;
-        
+
         bool board = ((luggage || (!result)) && tickets);
-        
-        if (board == 0) {
+
+        if (board == 0)
+        {
             cout << "\nBoarding process incomplete!";
         }
-        else if (board == 1) {
+        else if (board == 1)
+        {
             cout << "\nBoarding process completed successfully, Have a safe trip! " << name;
         }
     }
 
-    if (result == 1) {
+    if (result == 1)
+    {
         cout << name << ", You seem to be corona positive based on your symptoms." << endl;
         cout << "We cannot board you on the flight. Sorry for the inconvenience!" << endl;
     }
