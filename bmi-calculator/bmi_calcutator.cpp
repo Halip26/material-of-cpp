@@ -2,7 +2,8 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
   // Define the variables.
   double weight, height, BMI;
 
@@ -11,7 +12,7 @@ int main() {
   cin >> weight;
   cout << "Enter your height in meters: ";
   cin >> height;
-  
+
   // Calculate the BMI.
   BMI = weight / (height * height);
 
@@ -19,15 +20,24 @@ int main() {
   cout << "Your BMI is: " << BMI << endl;
 
   // Print the BMI category.
-  if (BMI < 18.5) {
+  if (BMI < 18.5)
+  {
     cout << "You are underweight." << endl;
-  } else if (BMI <= 24.9) {
+  }
+  else if (BMI <= 24.9)
+  {
     cout << "You have a normal weight." << endl;
-  } else if (BMI <= 29.9) {
+  }
+  else if (BMI <= 29.9)
+  {
     cout << "You are overweight." << endl;
-  } else if (BMI <= 34.9) {
+  }
+  else if (BMI <= 34.9)
+  {
     cout << "You are obese." << endl;
-  } else {
+  }
+  else
+  {
     cout << "You are extremly Obese" << endl;
   }
 
