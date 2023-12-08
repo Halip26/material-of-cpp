@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    bool fever, loss_of_taste, loss_of_smell, cough, tiredness, result, tickets, luggage;
+    bool fever, loss_of_taste, loss_of_smell, cough, tiredness, tickets, luggage, isPositive;
     string name;
     float age;
 
@@ -20,56 +20,46 @@ int main()
     cout << "Instructions for users: Enter (0) for NO and (1) for YES" << endl;
     cout << "---------------------------------------------------" << endl;
 
-    cout << "\n1. Have you been feeling feverish since past few days?: ";
+    cout << "\n1. Have you been feeling feverish since past few days? (0 for No, 1 for Yes): ";
     cin >> fever;
-    cout << "\n2. Have you been feeling loss of taste since past few days?: ";
+    cout << "\n2. Have you been feeling loss of taste since past few days? (0 for No, 1 for Yes): ";
     cin >> loss_of_taste;
-    cout << "\n3. Have you been feeling loss of smell since past few days?: ";
+    cout << "\n3. Have you been feeling loss of smell since past few days? (0 for No, 1 for Yes): ";
     cin >> loss_of_smell;
-    cout << "\n4. Are you having cough problem since past few days?: ";
+    cout << "\n4. Are you having cough problem since past few days? (0 for No, 1 for Yes): ";
     cin >> cough;
-    cout << "\n5. Have you been tired since past few days?: ";
+    cout << "\n5. Have you been tired since past few days? (0 for No, 1 for Yes): ";
     cin >> tiredness;
-    result = (fever && (loss_of_taste || loss_of_smell) && cough && tiredness);
 
-    if (result == 0)
+    isPositive = fever && (loss_of_taste || loss_of_smell) && cough && tiredness;
+
+    if (isPositive)
     {
-        cout << "\nCorona Positive, No or Yes? "
-             << "No"
-             << "\n\n";
+        cout << "\n"
+             << name << ", you seem to be corona positive based on your symptoms." << endl;
+        cout << "We cannot board you on the flight. Sorry for the inconvenience!" << endl;
     }
     else
     {
-        cout << "\nCorona Positive, No or Yes? "
-             << "Yes"
-             << "\n\n";
-    }
+        cout << "\nAre you diagnosed with COVID-19? (0 for No, 1 for Yes): " << (isPositive ? "Yes" : "No") << "\n\n";
 
-    if (result == 0)
-    {
-        cout << "Answer with No (0) or Yes (1)";
-        cout << "\nDo you have valid tickets?: ";
+        cout << "Answer with No (0) or Yes (1)" << endl;
+        cout << "Do you have valid tickets? (0 for No, 1 for Yes): ";
         cin >> tickets;
 
-        cout << "\nDo you want your luggage checked in?: ";
+        cout << "Do you want your luggage checked in? (0 for No, 1 for Yes): ";
         cin >> luggage;
 
-        bool board = ((luggage || (!result)) && tickets);
+        bool canBoard = luggage || !isPositive;
 
-        if (board == 0)
+        if (!canBoard)
         {
-            cout << "\nBoarding process incomplete!";
+            cout << "\nBoarding process incomplete!" << endl;
         }
-        else if (board == 1)
+        else
         {
-            cout << "\nBoarding process completed successfully, Have a safe trip! " << name;
+            cout << "\nBoarding process completed successfully. Have a safe trip! " << name << endl;
         }
-    }
-
-    if (result == 1)
-    {
-        cout << name << ", You seem to be corona positive based on your symptoms." << endl;
-        cout << "We cannot board you on the flight. Sorry for the inconvenience!" << endl;
     }
 
     return 0;
