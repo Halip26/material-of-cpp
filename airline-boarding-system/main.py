@@ -17,7 +17,6 @@ fever = bool(
         )
     )
 )
-
 loss_of_taste = bool(
     int(
         input(
@@ -25,7 +24,6 @@ loss_of_taste = bool(
         )
     )
 )
-
 loss_of_smell = bool(
     int(
         input(
@@ -33,7 +31,6 @@ loss_of_smell = bool(
         )
     )
 )
-
 cough = bool(
     int(
         input(
@@ -41,22 +38,17 @@ cough = bool(
         )
     )
 )
-
 tiredness = bool(
     int(input("\n5. Have you been tired since past few days? (0 for No, 1 for Yes): "))
 )
-
 isPositive = fever and (loss_of_taste or loss_of_smell) and cough and tiredness
-
 if isPositive:
     print("\n", name, ", you seem to be corona positive based on your symptoms.")
     print("We cannot board you on the flight. Sorry for the inconvenience!")
-
 else:
     print(
         f"\nAre you diagnosed with COVID-19? (0 for No, 1 for Yes): {'Yes' if isPositive else 'No'}\n"
     )
-
     tickets = bool(
         int(
             input(
@@ -67,9 +59,7 @@ else:
     luggage = bool(
         int(input("Do you want your luggage checked in? (0 for No, 1 for Yes): "))
     )
-
     canBoard = luggage or not isPositive
-
     if not canBoard:
         print("\nBoarding process incomplete!")
     else:
