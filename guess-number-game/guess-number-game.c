@@ -12,7 +12,8 @@ int main()
 
   char name[50];
   printf("Enter your name: ");
-  fgets(name, sizeof(name), stdin);
+  scanf("%s", &name, sizeof(name));
+  // fgets(name, sizeof(name), stdin);
 
   int max_attempts;
   printf("Enter the number of attempts you want: ");
