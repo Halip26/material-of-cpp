@@ -4,7 +4,8 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
     string sentence = "";
     cout << "Enter a sentence to check for palindrome: ";
     getline(cin, sentence);
@@ -16,9 +17,12 @@ int main() {
     reverse(reverseSentence.begin(), reverseSentence.end());
 
     // If sentence is equal to reverseSentence
-    if (sentence == reverseSentence) {
+    if (sentence == reverseSentence)
+    {
         :cout << "Yes, inputted sentence is a palindrome!";
-    } else {
+    }
+    else
+    {
         cout << "No, inputted sentence is not a palindrome!";
     }
 
