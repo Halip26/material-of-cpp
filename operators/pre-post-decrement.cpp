@@ -7,8 +7,8 @@ using namespace std;
 // Driver Code
 int main()
 {
-  int x = 10, a;
-  int y = 18, b;
+  int x = 17, a;
+  int y = 27, b;
 
   cout << "Pre Decrement Operation";
   cout << "\n-----------------------\n";
