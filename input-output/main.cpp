@@ -2,7 +2,8 @@
 using namespace std;
 
 // use the compiler in interactive mode!
-int main() {
+int main()
+{
   float num1, num2;
   float sum, sum1, sum2, sum3;
   cout << "Input any number(-ve/+ve/fractional): ";
