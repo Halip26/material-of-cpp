@@ -19,7 +19,7 @@ int main()
     // If sentence is equal to reverseSentence
     if (sentence == reverseSentence)
     {
-        :cout << "Yes, inputted sentence is a palindrome!";
+        cout << "Yes, inputted sentence is a palindrome!";
     }
     else
     {

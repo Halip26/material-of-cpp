@@ -16,4 +16,6 @@ int main()
   cout << "the result of multiplication of the two numbers is: " << sum1 << endl;
   sum2 = num1 / num2;
   cout << "the result of divide of the two numbers is: " << sum2 << endl;
+
+  return 0;
 }
