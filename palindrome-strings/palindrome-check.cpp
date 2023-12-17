@@ -26,18 +26,25 @@ int main()
 {
 	string kata;
 
-	// Meminta pengguna untuk memasukkan kata
-	cout << "Masukkan kata: ";
-	cin >> kata;
-
-	// Mengecek apakah kata adalah palindrom
-	if (isPalindrome(kata))
+	while (true)
 	{
-		cout << kata << " adalah palindrom." << endl;
-	}
-	else
-	{
-		cout << kata << " bukan palindrom." << endl;
+		// meminta pengguna untuk memasukkan kata
+		cout << "Masukkan kata (q for exit): ";
+		cin >> kata;
+		if (kata == "q")
+		{
+			cout << "You exited the program" << endl;
+			break;
+		}
+		// mengecek aakah kata adalah palindrome
+		if (isPalindrome(kata))
+		{
+			cout << kata << " adalah palindrome" << endl;
+		}
+		else
+		{
+			cout << kata << " adalah bukan palindrome" << endl;
+		}
 	}
 
 	return 0;

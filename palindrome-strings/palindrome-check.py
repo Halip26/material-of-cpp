@@ -6,9 +6,13 @@ def is_palindrome(word):
     return clean_word == clean_word[::-1]
 
 
-# Contoh penggunaan fungsi
-kata_input = input("Masukkan kata: ")
-if is_palindrome(kata_input):
-    print(f"{kata_input} adalah palindrome.")
-else:
-    print(f"{kata_input} bukan palindrome.")
+# to check the plaindrome word
+while True:
+    kata_input = input("Masukkan kata (q for exit): ")
+    if kata_input == "q":
+        print("You exited the program")
+        break
+    if is_palindrome(kata_input):
+        print(f"{kata_input} adalah palindrome")
+    else:
+        print(f"{kata_input} adalah bukan palindrome")
