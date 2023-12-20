@@ -14,13 +14,15 @@ int main()
     cin >> numbers[i];
   }
 
-  cout << "The numbers are: ";
+  cout << "The numbers are: " << endl;
 
   // print array elements
   for (int n = 0; n < 5; n++)
   {
     cout << numbers[n] << "  ";
   }
+
+  cout << endl;
 
   cout << "Enter 5 words: " << endl;
 
@@ -30,13 +32,15 @@ int main()
     cin >> words[i];
   }
 
-  cout << "The words are: ";
+  cout << "The words are: " << endl;
 
   // print array elements
   for (int n = 0; n < 5; n++)
   {
     cout << words[n] << "  ";
   }
+
+  cout << endl;
 
   return 0;
 }
