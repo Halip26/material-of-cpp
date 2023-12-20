@@ -83,6 +83,7 @@ int main() {
   for (int i = 0; i < 10; i++) {
     cout << "Nama siswa ke-" << i + 1 << ": " << nama_siswa[i] << endl;
   }
+}
  ```
 
 - sedangkan contoh array daftar_belanja
@@ -108,6 +109,3 @@ int main() {
   return 0;
 }
 ```
-
-  return 0;
-}
