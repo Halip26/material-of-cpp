@@ -5,25 +5,28 @@ using namespace std;
 
 int main()
 {
-  int a[50], i, n, sum = 0;
+  string verb[50];
+  int i, n;
 
-  cout << "Enter The Size of Array(Upto 50): ";
+  cout << "Enter The Size of Array (Upto 50): ";
   cin >> n;
 
   for (i = 0; i < n; i++)
   {
-    cout << "Enter Element Number " << i << ": ";
-    cin >> a[i];
+    cout << "Enter the verb " << i << ": ";
+    cin >> verb[i];
   }
 
   cout << "\n";
 
   cout << "Elements of Array in Reversed Order is Given Below\n";
+
   for (i = (n - 1); i >= 0; i--)
   {
-    cout << a[i] << "  ";
-    sum = sum + a[i];
+    cout << verb[i] << "  ";
   }
-  cout << "\n\nSum Of Array Is = " << sum;
+
+  cout << "\n\nLength of array = " << verb[i].length();
+
   return 0;
 }
