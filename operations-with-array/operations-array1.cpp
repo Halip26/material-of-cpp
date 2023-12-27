@@ -5,7 +5,7 @@ int main()
 {
   int marks[5], i;
   float sum = 0;
-  cout << "\n Enter Marks of Each Subject (Out of 100) \n";
+  cout << "\n Enter Marks of Each Subject (Out of 100): \n";
   cout << "\n Geography : ";
   cin >> marks[0];
   cout << "\n English : ";

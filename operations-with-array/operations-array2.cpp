@@ -10,16 +10,18 @@ int main()
   cout << "\nPlease Enter the Array Size =  ";
   cin >> size;
 
-  cout << "\nPlease Enter the First Array Items =  ";
   for (i = 0; i < size; i++)
   {
+    cout << "\nPlease Enter the First Array Items = ";
     cin >> arr1[i];
   }
-  cout << "\nPlease Enter the Second Array Items =  ";
+
   for (i = 0; i < size; i++)
   {
+    cout << "\nPlease Enter the Second Array Items = ";
     cin >> arr2[i];
   }
+
   for (i = 0; i < size; i++)
   {
     add[i] = arr1[i] + arr2[i];
@@ -35,6 +37,7 @@ int main()
     cout << arr1[i] << " % " << arr2[i] << " = " << div[i] << "\n";
   }
   cout << "\nAdd\tSub\tMul\tDiv\tMod  \n";
+
   for (i = 0; i < size; i++)
   {
     cout << add[i] << "\t";

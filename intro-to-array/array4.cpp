@@ -13,7 +13,7 @@ int main()
 
   for (i = 0; i < n; i++)
   {
-    cout << "Enter the verb " << i << ": ";
+    cout << "Enter the verb: " << i << ": ";
     cin >> verb[i];
   }
 
