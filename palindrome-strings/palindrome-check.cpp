@@ -31,12 +31,13 @@ int main()
 		// meminta pengguna untuk memasukkan kata
 		cout << "Masukkan kata (q for exit): ";
 		cin >> kata;
+		// apabila tombol q ditekan maka exit
 		if (kata == "q")
 		{
 			cout << "You exited the program" << endl;
 			break;
 		}
-		// mengecek aakah kata adalah palindrome
+		// mengecek apakah kata adalah palindrome
 		if (isPalindrome(kata))
 		{
 			cout << kata << " adalah palindrome" << endl;
