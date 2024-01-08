@@ -3,8 +3,11 @@ import time
 username = "halip26"
 password = "halip123456"
 print(" ")
+time.sleep(1)
 username_input = str(input("Enter your username:"))
+time.sleep(1)
 password_input = str(input("Enter your password:"))
+time.sleep(1)
 confirm_password = str(input("Enter your password again:"))
 
 print("-" * 40)

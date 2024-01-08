@@ -1,5 +1,5 @@
 name = str(input("Enter your name: "))
-age = float(input("Enter your name: "))
+age = float(input("Enter your age: "))
 
 print("\nWelcome ", name, ", to Corona Checking Centre,\nIt is mandatory to get checked for corona symptoms before you board the flight!")
 print("Enter the following details with full honesty to generate your report")
