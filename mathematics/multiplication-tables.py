@@ -1,4 +1,4 @@
-num = int(input("Enter the number to print table:"))
+num = int(input("Enter the number to print table: "))
 i = 1
 
 while i <= 10:
