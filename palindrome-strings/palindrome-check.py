@@ -12,7 +12,7 @@ while True:
     if kata_input == "q":
         print("You exited the program")
         break
-    if is_palindrome(kata_input):
+    elif is_palindrome(kata_input):
         print(f"{kata_input} adalah palindrome")
     else:
         print(f"{kata_input} adalah bukan palindrome")

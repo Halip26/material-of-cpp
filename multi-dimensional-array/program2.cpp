@@ -47,5 +47,6 @@ int main()
     }
     cout << "\n"; // new line at each row
   }
+
   return 0;
 }
