@@ -94,7 +94,8 @@
     "valarray": "cpp",
     "variant": "cpp",
     "AND.C": "cpp",
-    "NOT.C": "cpp"
+    "NOT.C": "cpp",
+    "lottery.C": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
