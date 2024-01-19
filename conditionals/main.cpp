@@ -2,7 +2,8 @@
 #include <string>
 using namespace std;
 
-int main() {
+int main()
+{
 
   // initialize variables with value
   string username = "Brightchamps";
@@ -16,18 +17,22 @@ int main() {
   cout << "Enter your password: ";
   cin >> pass_input;
 
-  if (username == uname_input && password == pass_input) {
-    cout << "Hi & welcome to your account! "<<username<<endl;
+  if (username == uname_input && password == pass_input)
+  {
+    cout << "Hi & welcome to your account! " << username << endl;
   }
-  else if (username != uname_input && password == pass_input) {
+  else if (username != uname_input && password == pass_input)
+  {
     cout << "Wrong username. Try again!\n ";
   }
-  else if (username == uname_input && password != pass_input) {
+  else if (username == uname_input && password != pass_input)
+  {
     cout << "Wrong password. Try again!\n";
   }
-  else {
+  else
+  {
     cout << "Username & Password doesn't exist\n";
   }
-  
+
   return 0;
 }
