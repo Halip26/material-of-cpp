@@ -44,11 +44,11 @@ int main() {
 
 Penjelasan:
 
-Di dalam contoh kode di atas, looping while akan terus mengeksekusi baris kode std::cout << i << std::endl; selama nilai variabel i kurang dari 10. Pada setiap iterasi, nilai variabel i akan bertambah 1.
+Di dalam contoh kode di atas, looping while akan terus mengeksekusi baris kode `cout << i << endl;` selama nilai variabel i kurang dari 10. Pada setiap iterasi, nilai variabel i akan bertambah 1.
 
 ## Looping do while
 
-Looping do while adalah looping yang akan selalu mengeksekusi baris kode di dalam looping setidaknya sekali, bahkan jika kondisi yang ditentukan bernilai salah.
+Looping do while adalah looping yang akan selalu mengeksekusi baris kode di dalam looping setidaknya sekali, bahkan jika kondisi yang ditentukan bernilai salah atau false.
 
 Contoh:
 
@@ -83,7 +83,7 @@ int main() {
 
 Penjelasan:
 
-Di dalam contoh kode di atas, looping do while akan selalu mengeksekusi baris kode std::cout << i << std::endl; setidaknya sekali, bahkan jika nilai variabel i sudah lebih dari atau sama dengan 0. Pada setiap iterasi, nilai variabel i akan bertambah 1.
+Di dalam contoh kode di atas, looping do while akan selalu mengeksekusi baris kode `cout << i << endl;` setidaknya sekali, bahkan jika nilai variabel i sudah lebih dari atau sama dengan 0. Pada setiap iterasi, nilai variabel i akan bertambah 1.
 
 ## Looping for
 
@@ -126,7 +126,7 @@ int main() {
 
 Penjelasan:
 
-Di dalam contoh kode di atas, looping for akan mengeksekusi baris kode std::cout << i << std::endl; sebanyak 10 kali. Pada setiap iterasi, nilai variabel i akan bertambah 1.
+Di dalam contoh kode di atas, looping for akan mengeksekusi baris kode cout << i << endl; sebanyak 10 kali. Pada setiap iterasi, nilai variabel i akan bertambah 1.
 
 ## Kesimpulan
 

@@ -1,8 +1,8 @@
 import time
 
-num = 0
+num = 1
 
-while True:  # looping forever
-    time.sleep(2)
-    print(num, "Halo gaes")
+while num < 11:
+    time.sleep(1)
+    print(f"Halo gaes {num}")
     num += 1
