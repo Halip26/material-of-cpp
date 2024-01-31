@@ -7,7 +7,6 @@ int main()
 {
   // Creating and initializing an integer array
   // Custom input entries
-
   int a[] = {75, 56, 12, 85};
   char d[] = {'b', 'r', 'i', 'g', 'h', 't', 'c', 'h', 'a', 'm', 'p', 's'};
 
@@ -27,4 +26,6 @@ int main()
   {
     cout << f << " ";
   }
+
+  return 0;
 }
