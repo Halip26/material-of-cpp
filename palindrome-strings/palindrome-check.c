@@ -1,22 +1,41 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h> // apa gunanya lagi?
 
 // Fungsi untuk mengecek apakah kata adalah palindrom
-int isPalindrome(char word[])
+int isPalindrome(const char *word) // outptnya "Halip ilaH adalah Palindrome"
 {
     // Menghitung panjang kata
     int length = strlen(word);
 
-    // Menginisialisasi indeks untuk karakter pertama dan terakhir
-    int i, j;
-    for (i = 0, j = length - 1; i < j; i++, j--)
+    // mengalokasikan array untuk kata yg sudah dibersihkan
+    char cleanWord[length];
+    int cleanIndex = 0;
+
+    // menghapus spasi & mengubah huruf menjadi huruf kecil
+    for (int i = 0; i < length; i++)
     {
-        // Membandingkan karakter dari kedua ujung
-        if (word[i] != word[j])
+        if (!isspace(word[i]))
         {
-            return 0; // Bukan palindrom
+            cleanWord[cleanIndex++] = tolower(word[i]);
         }
     }
+    cleanWord[cleanIndex] = '\0'; // Menambahkan null terminator
+
+    // membandingkan kata dengan kebalikannya
+    int start = 0;
+    int end = cleanIndex - 1;
+    while (start < end)
+    {
+        if (cleanWord[start] != cleanWord[end])
+        {
+            return 0; // bukan palindrome
+        }
+
+        start++;
+        end--;
+    }
+
     return 1; // Palindrom
 }
 
@@ -27,22 +46,24 @@ int main()
     {
         // Meminta pengguna untuk memasukkan kata
         printf("Masukkan kata (q for exit): ");
-        scanf("%s", kata);
+        fgets(kata, sizeof(kata), stdin);
 
-        if (kata == "q")
+        // menghilangkan newline dari input
+        kata[strcspn(kata, "\n")] = '\0';
+
+        if (strcmp(kata, "q") == 0)
         {
-            printf("You exited the program");
+            printf("You exited the program\n");
             break;
         }
-
         // Mengecek apakah kata adalah palindrom
-        if (isPalindrome(kata))
+        else if (isPalindrome(kata))
         {
-            printf("%s adalah palindrom.\n", kata);
+            printf("%s is a palindrome word.\n", kata);
         }
         else
         {
-            printf("%s bukan palindrom.\n", kata);
+            printf("%s is Not a palindrome word.\n", kata);
         }
     }
 

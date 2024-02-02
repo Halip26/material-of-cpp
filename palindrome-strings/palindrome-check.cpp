@@ -30,7 +30,7 @@ int main()
 	{
 		// meminta pengguna untuk memasukkan kata
 		cout << "Masukkan kata (q for exit): ";
-		cin >> kata;
+		cin >> kata; // hanya mengambil Halip sedangkan ilaH di baris selanjutnya
 		// apabila tombol q ditekan maka exit
 		if (kata == "q")
 		{

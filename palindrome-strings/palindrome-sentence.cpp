@@ -8,7 +8,7 @@ int main()
 {
     string sentence = "";
     cout << "Enter a sentence to check for palindrome: ";
-    getline(cin, sentence);
+    getline(cin, sentence); //akan ambil serulug strings Halip ilaH
 
     // Remove spaces from the string
     sentence.erase(remove(sentence.begin(), sentence.end(), ' '), sentence.end());
