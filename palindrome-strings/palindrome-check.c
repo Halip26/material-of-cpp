@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h> // apa gunanya lagi?
+#include <ctype.h> // c type standard lib
 
 // Fungsi untuk mengecek apakah kata adalah palindrom
 int isPalindrome(const char *word) // outptnya "Halip ilaH adalah Palindrome"
