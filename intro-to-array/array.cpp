@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+
   // deklarasi array
   int angka[10];
 
