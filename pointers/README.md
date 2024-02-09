@@ -1,8 +1,8 @@
-# Pointers in C++
+# Penjelasan Pointers in C++
 
 Pointer adalah variabel yang menyimpan alamat memori dari variabel lain. Pointer dapat digunakan untuk mengakses nilai variabel lain secara langsung, tanpa perlu menggunakan nama variabel tersebut.
 
-Dalam bahasa pemrograman C++, pointer dideklarasikan dengan menggunakan operator asterisk (*). Misalnya, untuk mendeklarasikan pointer ke variabel integer, kita bisa menggunakan kode berikut:
+Dalam bahasa pemrograman C++, pointer dideklarasikan dengan menggunakan operator asterisk (`*`). Misalnya, untuk mendeklarasikan pointer ke variabel integer, kita bisa menggunakan kode berikut:
 
 ```cpp
 int *ptr;
@@ -10,7 +10,7 @@ int *ptr;
 
 Kode di atas akan mendeklarasikan variabel `ptr` yang bertipe pointer ke integer. Nilai awal variabel `ptr` adalah `NULL`, yang berarti tidak menunjuk ke variabel mana pun.
 
-Untuk memberi nilai pada pointer, kita bisa menggunakan operator alamat (&). Misalnya, untuk memberi nilai pointer `ptr` ke variabel `a`, kita bisa menggunakan kode berikut:
+Untuk memberi nilai pada pointer, kita bisa menggunakan operator alamat (`&`). Misalnya, untuk memberi nilai pointer `ptr` ke variabel `a`, kita bisa menggunakan kode berikut:
 
 ```cpp
 int a = 10;
@@ -33,7 +33,6 @@ Pointer dapat digunakan untuk berbagai keperluan, seperti:
 - Mengalokasikan memori dinamis
 - Mentransfer data ke fungsi
 - Melakukan iterasi atas array atau struktur data
--
 
 Berikut adalah beberapa contoh penggunaan pointer di bahasa pemrograman C++:
 

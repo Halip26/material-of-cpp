@@ -11,7 +11,7 @@ int main()
   cin >> number;
 
   // Print the multiplication table
-  for (int i = 1; i <= 10; ++i)
+  for (int i = 1; i <= 100; ++i)
   {
     Sleep(500);
     cout << i << " x " << number << " = " << (number * i) << endl;

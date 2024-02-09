@@ -4,17 +4,16 @@ using namespace std;
 
 int main()
 {
-  int x = 27;
-  int *p;
+  int *ip;
+  int arr[] = {10, 34, 13, 76, 5, 46};
 
-  p = &x;
+  ip = arr;
 
-  cout << "Value of x is : ";
-  cout << x << endl;
-  cout << "Value of p is : ";
-  cout << p << endl;
-  cout << "Value of *p is : ";
-  cout << *p << endl;
+  for (int x = 0; x < 6; x++)
+  {
+    cout << *ip << endl;
+    ip++;
+  }
 
   return 0;
 }

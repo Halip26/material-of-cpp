@@ -4,15 +4,22 @@ using namespace std;
 
 int main()
 {
-  int *ip;
-  int arr[] = {10, 34, 13, 76, 5, 46};
+  int var;
+  int *ptr;
+  int **pptr;
 
-  ip = arr;
+  var = 4096;
 
-  for (int x = 0; x < 6; x++)
-  {
-    cout << *ip << endl;
-    ip++;
-  }
+  // take the address of var
+  ptr = &var;
+
+  // take the address of ptr using address of operator &
+  pptr = &ptr;
+
+  // take the value using pptr
+  cout << "Value of var :" << var << endl;
+  cout << "Value available at *ptr :" << *ptr << endl;
+  cout << "Value available at **pptr :" << **pptr << endl;
+
   return 0;
 }

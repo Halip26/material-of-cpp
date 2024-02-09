@@ -1,77 +1,86 @@
 #include <iostream>
 #include <string>
-#include <vector>
 #include <algorithm>
 #include <cstdlib>
 #include <ctime>
 
 using namespace std;
 
-int main() {
-    // word guess game
-    vector<string> words = {"bright", "champs", "coding", "python", "student"};
+int main()
+{
+    // Word guess game
+    string words[] = {"bright", "champs", "coding", "python", "student"};
+    int numWords = sizeof(words) / sizeof(words[0]);
 
-    // di sini kita menggunakan fungsi srand() untuk mengacak kata
+    // Here we use srand() function to shuffle the words
     srand(time(0));
-    string word = words[rand() % words.size()];
+    string word = words[rand() % numWords];
 
-    // variabel untuk input teks
+    // Variable for player's name input
     string name;
     cout << "Please enter the player's name: ";
     cin >> name;
 
-    // di sini kita mendefinisikan variabel dengan string
+    // Here we define a variable with string to store guessed letters
     string guessedLetters;
 
-    // sejumlah peluang dapat digunakan di sini
+    // Number of chances
     int chance = 10;
 
     cout << "Okay! " << name << " Let's start guessing." << endl;
 
-    // looping
-    while (chance > 0) {
-        // di sini kita akan mengambil kata untuk diperiksa
+    // Looping
+    while (chance > 0)
+    {
+        // Here we will take the guessed letter to check
         char guess;
         cout << "Guess a letter of the word: ";
         cin >> guess;
 
-        // di guessedLetters kita akan menyimpan semua huruf yang telah kita sisipkan.
+        // Store guessed letters
         guessedLetters += guess;
 
-        // di sini kita memeriksa apakah semua huruf benar atau salah
+        // Here we check if all letters are correct or wrong
         bool wrong = false;
 
-        // di sini semua huruf akan diperiksa satu per satu menggunakan loop
-        for (char letter : word) {
-            // jika huruf yang dimasukkan pengguna ada di dalamnya, lalu cetak.
-            if (find(guessedLetters.begin(), guessedLetters.end(), letter) != guessedLetters.end()) {
+        // Here all letters will be checked one by one using a loop
+        for (char letter : word)
+        {
+            // If the letter entered by the user is in it, then print it
+            if (find(guessedLetters.begin(), guessedLetters.end(), letter) != guessedLetters.end())
+            {
                 cout << letter;
-            } else {
+            }
+            else
+            {
                 cout << "_";
                 wrong = true;
             }
         }
         cout << endl;
 
-        // jika wrong adalah false, maka artinya semua huruf cocok
-        if (!wrong) {
+        // If wrong is false, it means all letters match
+        if (!wrong)
+        {
             cout << "Congratulations! " << name << " You guessed all the letters correctly." << endl;
             cout << "The correct word is: " << word << endl;
             break;
         }
 
-        // jika huruf yang kita tebak tidak ada dalam kata
-        if (word.find(guess) == string::npos) {
-            // peluang akan dikurangi 1
+        // If the guessed letter is not in the word
+        if (word.find(guess) == string::npos)
+        {
+            // Decrement chances
             chance--;
 
             cout << "Wrong guess. This letter is not in the word." << endl;
 
-            // di sini akan memberitahu berapa peluang pengguna yang tersisa
+            // Here it will tell how many chances the user has left
             cout << "You have " << chance << " more guess chances." << endl;
 
-            // jika peluangnya 0, kita akan mencetak bahwa pengguna kalah
-            if (chance == 0) {
+            // If chances are 0, we will print that the user lost
+            if (chance == 0)
+            {
                 cout << "Sorry! Your number of chances are over. You lost." << endl;
             }
         }
