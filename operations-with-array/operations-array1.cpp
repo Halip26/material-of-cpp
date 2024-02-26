@@ -27,5 +27,6 @@ int main()
   per = (sum / 500) * 100;
   cout << "\n Average Marks = " << avg;
   cout << "\n Percentage = " << per << " %";
+
   return 0;
 }

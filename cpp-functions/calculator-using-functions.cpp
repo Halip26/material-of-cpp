@@ -1,34 +1,33 @@
 #include <iostream>
 using namespace std;
 
-int addition(int a, int b)
+int addition(int num1, int num2)
 {
-  return a + b;
+  return num1 + num2;
 }
 
-int subtraction(int a, int b)
+int subtraction(int num1, int num2)
 {
-  return a - b;
+  return num1 - num2;
 }
 
-int multiplication(int a, int b)
+int multiplication(int num1, int num2)
 {
-  return a * b;
+  return num1 * num2;
 }
 
-float division(int a, int b)
+float division(int num1, int num2)
 {
-  return static_cast<float>(a) / b;
+  return static_cast<float>(num1) / num2;
 }
 
 int main()
 {
-  int a, b, user_choice;
-  float result;
-
   cout << "\n-- Welcome to calculator --" << endl;
   while (true)
   {
+    int a, b, user_choice;
+    float result;
 
     cout << "----------------------------------------" << endl;
     cout << "Enter the first number: ";

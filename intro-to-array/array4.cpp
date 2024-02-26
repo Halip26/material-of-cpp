@@ -19,11 +19,11 @@ int main()
 
   cout << "\n";
 
-  cout << "Elements of Array in Reversed Order is Given Below\n";
+  cout << "Elements of Array in Reversed Order is Given Below:\n";
 
   for (i = (n - 1); i >= 0; i--)
   {
-    cout << verb[i] << "  ";
+    cout << i << ". " << verb[i] << endl;
   }
 
   cout << "\n\nLength of array = " << verb[i].length();
