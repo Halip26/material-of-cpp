@@ -15,6 +15,8 @@ Untuk memberi nilai pada pointer, kita bisa menggunakan operator alamat (`&`). M
 ```cpp
 int a = 10;
 
+int *ptr;
+
 ptr = &a;
 ```
 

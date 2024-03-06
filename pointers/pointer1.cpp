@@ -5,16 +5,16 @@ using namespace std;
 int main()
 {
   int x = 27;
-  int *p;
+  int *p; // deklarasi var p with NULL
   p = &x;
 
   cout << "Value of x is : " << x << endl;
   cout << "Value of p is : " << p << endl;
   cout << "Value of *p is : " << *p << endl;
 
-  int *bimba; // null
-
   int halip = 29;
+
+  int *bimba; // null
 
   bimba = &halip;
 

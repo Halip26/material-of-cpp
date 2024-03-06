@@ -4,8 +4,9 @@ using namespace std;
 
 int main()
 {
-  int *ip;
   int arr[] = {10, 34, 13, 76, 5, 46};
+
+  int *ip;
 
   ip = arr;
 
