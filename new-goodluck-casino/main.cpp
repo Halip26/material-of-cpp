@@ -50,9 +50,20 @@ int main()
                  << "\n\n";
             cout << "Enter Bid Amount: $";
             cin >> bidamnt;
+
+            cout << endl;
+
             if (bidamnt > amnt)
+            {
                 cout << "You Can not Bid More Than Current Amount\n"
-                     << "\nRe-enter Amount: ";
+                     << "\nPleas, Re-enter Amount down below: " << endl;
+
+                // this block code create lines
+                for (int i = 0; i <= 35; i++)
+                {
+                    cout << "-";
+                }
+            }
         } while (bidamnt > amnt);
 
         do
@@ -60,8 +71,17 @@ int main()
             cout << "Guess The Number Between 1 To 10 :";
             cin >> guess;
             if (guess <= 0 || guess > 10)
+            {
                 cout << "\nNumber Sholud Be Between 1 To 10\n"
-                     << "\nGuess Numer Again: ";
+                     << "\nGuess Numer Again: " << endl;
+
+                // this block code create lines
+                for (int i = 0; i <= 35; i++)
+                {
+                    cout << "-";
+                }
+                cout << endl;
+            }
         } while (guess <= 0 || guess > 10);
 
         dice = rand() % 10 + 1;
@@ -70,18 +90,20 @@ int main()
         if (dice == guess)
         {
             cout << "\nHurray You Won " << bidamnt * 10 << "$";
-            amnt = amnt + bidamnt * 10;
+            amnt += bidamnt * 10;
         }
         else
         {
-            cout << "Sorry You Lose " << bidamnt << "$\n";
-            amnt = amnt - bidamnt;
+            cout << "Sorry You Lose "
+                 << "$" << bidamnt << endl;
+            amnt -= bidamnt;
         }
 
         // to inform the user that correct number
         cout << "\nThe Winning Number Was: " << dice << "\n";
         cout << "\n"
-             << name << ", Your Remaining Amount Is " << amnt << "$\n";
+             << name << ", Your Remaining Amount Is "
+             << "$" << amnt << endl;
 
         if (amnt == 0)
         {
@@ -93,7 +115,8 @@ int main()
     } while (choice == 'Y' || choice == 'y');
 
     cout << "\n===============================================================================================\n";
-    cout << "Thanks For Playing Game Again Your Current Amount Is " << amnt << "$";
+    cout << "Thanks For Playing Game Again Your Current Amount Is "
+         << "$" << amnt << endl;
     cout << "\n===============================================================================================\n";
 
     return 0;
