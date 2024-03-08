@@ -11,17 +11,19 @@ Contoh penggunaan fungsi bawaan:
 ```cpp
 #include <iostream>
 
+using namespace std;
+
 int main() {
     // Fungsi output
-    std::cout << "Hello, World!" << std::endl;
+    cout << "Hello, World!" << endl;
 
     // Fungsi input
     int num;
-    std::cin >> num;
+    cin >> num;
 
     // Fungsi matematika
-    int result = std::abs(-5); // Menghasilkan nilai absolut dari -5
-    std::cout << "Absolute value: " << result << std::endl;
+    int result = abs(-5); // Menghasilkan nilai absolut dari -5
+    cout << "Absolute value: " << result << endl;
 
     return 0;
 }
@@ -36,6 +38,8 @@ Contoh definisi dan pemanggilan fungsi pengguna:
 ```cpp
 #include <iostream>
 
+using namespace std;
+
 // Definisi fungsi pengguna
 int add(int a, int b) {
     return a + b;
@@ -44,7 +48,7 @@ int add(int a, int b) {
 int main() {
     // Pemanggilan fungsi pengguna
     int result = add(3, 5);
-    std::cout << "Result: " << result << std::endl;
+    cout << "Result: " << result << endl;
 
     return 0;
 }
@@ -60,7 +64,7 @@ Terdapat dua jenis tipe fungsi berdasarkan tipe pengembalian:
 
    ```cpp
    void displayMessage() {
-       std::cout << "Hello, World!" << std::endl;
+       cout << "Hello, World!" << endl;
    }
    ```
 
@@ -72,10 +76,11 @@ Contoh:
 
 ```cpp
 #include <iostream>
+using namespace std;
 
 // Definisi fungsi pengguna dengan parameter
-void greet(std::string name) {
-    std::cout << "Hello, " << name << "!" << std::endl;
+void greet(string name) {
+    cout << "Hello, " << name << "!" << endl;
 }
 
 int main() {
@@ -97,6 +102,8 @@ Contoh:
 ```cpp
 #include <iostream>
 
+using namespace std;
+
 // Fungsi pengguna yang di-overload
 int add(int a, int b) {
     return a + b;
@@ -107,8 +114,8 @@ float add(float a, float b) {
 }
 
 int main() {
-    std::cout << "Integer Addition: " << add(5, 3) << std::endl;
-    std::cout << "Float Addition: " << add(3.5f, 2.7f) << std::endl;
+    cout << "Integer Addition: " << add(5, 3) << endl;
+    cout << "Float Addition: " << add(3.5f, 2.7f) << endl;
 
     return 0;
 }
@@ -125,11 +132,13 @@ Contoh:
 ```cpp
 #include <iostream>
 
+using namespace std;
+
 // Prototipe fungsi
 int add(int a, int b);
 
 int main() {
-    std::cout << "Result: " << add(5, 3) << std::endl;
+    cout << "Result: " << add(5, 3) << endl;
 
     return 0;
 }
@@ -142,7 +151,7 @@ int add(int a, int b) {
 
 Dalam contoh di atas, prototipe fungsi `add` dideklarasikan sebelum `main()`, dan definisi fungsi sesungguhnya ditempatkan setelah `main()`.
 
-## Catatan Penting:
+## Catatan Penting
 
 - kamu dapat mendefinisikan fungsi di dalam fungsi lainnya (nested functions).
 - Fungsi rekursif adalah fungsi yang memanggil dirinya sendiri.
