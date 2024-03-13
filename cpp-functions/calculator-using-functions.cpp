@@ -28,6 +28,11 @@ int floor_division(int num1, int num2)
   return num1 / num2;
 }
 
+int modulo(int num1, int num2)
+{
+  return num1 % num2;
+}
+
 int exponent(int num1, int num2)
 {
   return pow(num1, num2);
@@ -99,7 +104,7 @@ int main()
     }
     else if (user_choice == 6)
     {
-      result = a % b;
+      result = modulo(a, b);
       cout << "Modulus of " << a << " % " << b << " = " << result << endl;
     }
     else if (user_choice == 7)

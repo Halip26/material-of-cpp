@@ -70,7 +70,7 @@ Terdapat dua jenis tipe fungsi berdasarkan tipe pengembalian:
 
 ## Parameter Fungsi
 
-Parameter adalah nilai yang diberikan kepada fungsi saat dipanggil. Fungsi kemudian menggunakan nilai-nilai ini dalam operasinya. Parameter dideklarasikan dalam tkamu kurung setelah nama fungsi.
+Parameter adalah nilai yang diberikan kepada fungsi saat dipanggil. Fungsi kemudian menggunakan nilai-nilai ini dalam operasinya. Parameter dideklarasikan dalam tanda kurung setelah nama fungsi.
 
 Contoh:
 
