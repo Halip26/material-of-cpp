@@ -10,7 +10,7 @@ def is_palindrome(word):
 while True:
     kata_input = input("Masukkan kata (q for exit): ")
     if kata_input == "q":
-        print("You exited the program")
+        print("You've exited the program")
         break
     elif is_palindrome(kata_input):
         print(f"{kata_input} adalah palindrome")

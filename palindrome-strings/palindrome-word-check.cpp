@@ -24,13 +24,12 @@ bool isPalindrome(const string &word)
 
 int main()
 {
-	string kata;
-
 	while (true)
 	{
+		string kata;
 		// meminta pengguna untuk memasukkan kata
 		cout << "Masukkan kata (q for exit): ";
-		cin >> kata; // hanya mengambil Halip sedangkan ilaH di baris selanjutnya
+		getline(cin, kata); // hanya mengambil Halip sedangkan ilaH di baris selanjutnya
 		// apabila tombol q ditekan maka exit
 		if (kata == "q")
 		{
