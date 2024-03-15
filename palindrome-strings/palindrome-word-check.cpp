@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstring>
+#include <string>
 
 using namespace std;
 
@@ -24,13 +24,15 @@ bool isPalindrome(const string &word)
 
 int main()
 {
+	string kata;
+
 	while (true)
 	{
-		string kata;
+
 		// meminta pengguna untuk memasukkan kata
 		cout << "Masukkan kata (q for exit): ";
-		getline(cin, kata); // hanya mengambil Halip sedangkan ilaH di baris selanjutnya
-		// apabila tombol q ditekan maka exit
+		cin >> kata;
+
 		if (kata == "q")
 		{
 			cout << "You exited the program" << endl;

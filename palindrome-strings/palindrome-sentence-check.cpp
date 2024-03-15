@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <algorithm>
 
 using namespace std;
 
@@ -16,36 +15,54 @@ string cleanString(const string &str)
     return result;
 }
 
-// Fungsi untuk mengecek apakah string merupakan palindrom atau bukan
-bool isPalindrome(const string &str)
+// Fungsi untuk mengecek apakah kata adalah palindrom
+bool isPalindrome(const string &word)
 {
-    string cleanStr = cleanString(str);
+    string cleanStr = cleanString(word);
     string reversedStr = cleanStr;
-    reverse(reversedStr.begin(), reversedStr.end());
-    return cleanStr == reversedStr;
+
+    // Menghitung panjang kata
+    int length = reversedStr.length();
+
+    // Menginisialisasi indeks untuk karakter pertama dan terakhir
+    int i, j;
+    for (i = 0, j = length - 1; i < j; i++, j--)
+    {
+        // Membandingkan karakter dari kedua ujung
+        if (reversedStr[i] != reversedStr[j])
+        {
+            return false; // Bukan palindrome
+        }
+    }
+    return true; // Palindrome
 }
 
 int main()
 {
-    string input;
+    string kata;
+
     while (true)
     {
-        cout << "Masukkan kata atau kalimat (q untuk keluar): ";
-        getline(cin, input);
 
-        if (input == "q")
+        // meminta pengguna untuk memasukkan kata
+        cout << "Masukkan kata/kalimat (q for exit): ";
+        getline(cin, kata);
+
+        if (kata == "q")
         {
-            cout << "Anda keluar dari program" << endl;
+            cout << "You exited the program" << endl;
             break;
         }
-        else if (isPalindrome(input))
+        // mengecek apakah kata adalah palindrome
+        if (isPalindrome(kata))
         {
-            cout << input << " adalah palindrom" << endl;
+            cout << kata << " adalah palindrome" << endl;
         }
         else
         {
-            cout << input << " adalah bukan palindrom" << endl;
+            cout << kata << " adalah bukan palindrome" << endl;
         }
     }
+
     return 0;
 }
