@@ -31,7 +31,7 @@ int main()
 
 		// meminta pengguna untuk memasukkan kata
 		cout << "Masukkan kata (q for exit): ";
-		cin >> kata;
+		getline(cin, kata);
 
 		if (kata == "q")
 		{
