@@ -8,7 +8,7 @@ double Average(int *arr, int size)
 
   for (i = 0; i < size; ++i)
   {
-    sum += arr[i];
+  sum += arr[i];
   }
   avg = double(sum) / size;
 

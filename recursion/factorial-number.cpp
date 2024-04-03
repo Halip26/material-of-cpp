@@ -21,9 +21,16 @@ int main()
 
   while (true)
   {
+
     // Untuk pengguna menginput angkanya
-    cout << "Enter the number: " << endl;
+    cout << "\nEnter the number: " << endl;
     cin >> userInput;
+
+    for (int i = 0; i <= 40; i++)
+    {
+      cout << "-";
+    }
+    cout << endl;
 
     int cek_factorial = faktorial(userInput);
     if (userInput <= 1)
