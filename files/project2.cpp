@@ -9,7 +9,7 @@ int main()
 
   string line;
 
-  fio.open("sample.txt", ios::trunc | ios::out | ios::in);
+  fio.open("project2.txt", ios::trunc | ios::out | ios::in);
 
   cout << "Enter your text for file. To stop, type -1 in new line\n";
   cout << "******************************************************\n";
