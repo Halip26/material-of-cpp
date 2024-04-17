@@ -1,35 +1,39 @@
 #include <iostream>
 #include <fstream>
-#include <string> // Tambahkan library string untuk menggunakan tipe data string
+#include <string>
 
 using namespace std;
 
 struct Student
-{ // Buat struct untuk merepresentasikan data mahasiswa
+{
   string name;
   float marks;
 };
 
 int main()
 {
-  ofstream fout("student.txt"); // Ganti nama file ke "student.txt" agar lebih deskriptif
+  ofstream fout("student.txt");
   char ch;
+  int numStudents; // Variabel untuk menyimpan jumlah siswa yang ingin dimasukkan
 
-  // Array untuk menyimpan data mahasiswa
-  Student students[5];
+  cout << "Enter the number of students: ";
+  cin >> numStudents;
+
+  // Array untuk menyimpan data mahasiswa sesuai jumlah yang dimasukkan pengguna
+  Student students[numStudents];
 
   // Input data dari pengguna
-  for (int i = 0; i < 5; i++)
+  for (int i = 0; i < numStudents; i++)
   {
     cout << i + 1 << ". Name :\t";
-    cin >> students[i].name; // Ubah ke input string agar lebih aman
+    cin >> students[i].name;
     cout << i + 1 << ". Marks: \t";
     cin >> students[i].marks;
     cin.ignore(); // Hapus karakter newline dari buffer
   }
 
   // Menulis data mahasiswa ke dalam file
-  for (int i = 0; i < 5; i++)
+  for (int i = 0; i < numStudents; i++)
   {
     fout << students[i].name << '\n'
          << students[i].marks << '\n';
@@ -39,9 +43,9 @@ int main()
   ifstream fin("student.txt");
 
   // Membaca dan menampilkan data mahasiswa dari file
-  for (int j = 0; j < 5; j++)
+  for (int j = 0; j < numStudents; j++)
   {
-    getline(fin, students[j].name); // Menggunakan getline untuk membaca string
+    getline(fin, students[j].name);
     fin >> students[j].marks;
     fin.ignore(); // Hapus karakter newline dari buffer
     cout << j + 1 << ". Student name:\t" << students[j].name;
