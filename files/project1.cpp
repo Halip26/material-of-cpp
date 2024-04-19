@@ -14,8 +14,17 @@ int main()
 {
   ofstream fout("student.txt");
   char ch;
-  int numStudents; // Variabel untuk menyimpan jumlah siswa yang ingin dimasukkan
+  // Variabel untuk menyimpan jumlah siswa yang ingin dimasukkan
+  int numStudents;
 
+  // buat garis doang
+  for (int i = 0; i <= 35; i++)
+  {
+    cout << "-";
+  }
+  cout << endl;
+
+  // meminta input jumlah siswanya
   cout << "Enter the number of students: ";
   cin >> numStudents;
 
@@ -42,14 +51,21 @@ int main()
 
   ifstream fin("student.txt");
 
+  // buat garis doang
+  for (int i = 0; i <= 35; i++)
+  {
+    cout << "-";
+  }
+  cout << endl;
+
   // Membaca dan menampilkan data mahasiswa dari file
   for (int j = 0; j < numStudents; j++)
   {
     getline(fin, students[j].name);
     fin >> students[j].marks;
     fin.ignore(); // Hapus karakter newline dari buffer
-    cout << j + 1 << ". Student name:\t" << students[j].name;
-    cout << "\t Marks:" << students[j].marks << '\n';
+    cout << j + 1 << ". Student name:" << students[j].name;
+    cout << "\t Marks: " << students[j].marks << '\n';
   }
   fin.close();
 
