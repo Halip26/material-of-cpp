@@ -11,7 +11,7 @@ int main()
 
   fio.open("project2.txt", ios::trunc | ios::out | ios::in);
 
-  cout << "Enter your text for file. To stop, type -1 in new line\n";
+  cout << "\nEnter your text for file. To stop, type -1 in new line\n";
   cout << "******************************************************\n";
   while (fio)
   {
@@ -25,7 +25,7 @@ int main()
   }
 
   fio.seekg(0, ios::beg);
-  cout << "Reading from the file\n";
+  cout << "\nReading from the file\n";
   cout << "*********************\n";
   while (fio)
   {
