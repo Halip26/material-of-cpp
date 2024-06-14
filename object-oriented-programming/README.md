@@ -17,7 +17,7 @@ C++ adalah bahasa pemrograman yang mendukung OOP secara penuh. Fitur-fitur OOP d
 OOP menawarkan beberapa manfaat, antara lain:
 
 * **Modularitas**: Kode dapat dibagi menjadi modul-modul yang lebih kecil dan mudah dikelola.
-* **Kemudahan dipahami**: Kode OOP lebih mudah dipahami karena terstruktur dengan baik dan menggunakan terminologi yang intuitif.
+* **Kemudahan dalam memahami**: Kode OOP lebih mudah dipahami karena terstruktur dengan baik dan menggunakan terminologi yang intuitif.
 * **Kemudahan dipelihara**: Kode OOP lebih mudah dipelihara karena perubahan pada satu modul tidak akan memengaruhi modul lain.
 * **Daya guna kembali**: Kode OOP dapat digunakan kembali dengan mudah dalam proyek yang berbeda.
 
