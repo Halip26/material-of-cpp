@@ -12,7 +12,7 @@ public:
   {
     cout << "\n Enter Name   : ";
     cin >> name;
-    cout << "\n No. Of Units : ";
+    cout << "\n How much electricity is used : ";
     cin >> unit;
   }
   void print_bill();
