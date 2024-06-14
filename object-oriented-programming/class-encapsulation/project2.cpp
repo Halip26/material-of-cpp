@@ -2,7 +2,6 @@
 using namespace std;
 
 // Encapsulation usage in cpp
-
 class Electric
 {
   float unit;
