@@ -25,7 +25,7 @@ OOP menawarkan beberapa manfaat, antara lain:
 
 Berikut adalah beberapa konsep dasar OOP dalam C++:
 
-* **Kelas**: Dibuat dengan menggunakan kata kunci `class`. Di dalam kelas, Anda dapat mendefinisikan atribut dan metode menggunakan kata kunci `private`, `public`, dan `protected`.
+* **Kelas**: Dibuat dengan menggunakan kata kunci `class`. Di dalam kelas, Kamu dapat mendefinisikan atribut dan metode menggunakan kata kunci `private`, `public`, dan `protected`.
 * **Objek**: Dibuat dengan menggunakan operator `new`.
 * **Atribut**: Didefinisikan menggunakan variabel di dalam kelas.
 * **Metode**: Didefinisikan menggunakan fungsi di dalam kelas.
@@ -54,11 +54,11 @@ Berikut adalah beberapa sumber daya untuk belajar OOP di C++:
 
 ## **Kesimpulan**
 
-OOP adalah paradigma pemrograman yang penting untuk dipelajari oleh programmer C++. OOP menawarkan banyak manfaat, seperti modularitas, kemudahan dipahami, dan kemudahan dipelihara. Dengan mempelajari OOP, Anda dapat menulis kode yang lebih baik dan lebih mudah dikelola.
+OOP adalah paradigma pemrograman yang penting untuk dipelajari oleh programmer C++. OOP menawarkan banyak manfaat, seperti modularitas, kemudahan dipahami, dan kemudahan dipelihara. Dengan mempelajari OOP, Kamu dapat menulis kode yang lebih baik dan lebih mudah dikelola.
 
 ### **Tips**
 
 * Saat belajar OOP, mulailah dengan konsep dasar terlebih dahulu.
 * Berlatihlah menulis kode OOP sesering mungkin.
-* Gunakan debugger untuk membantu Anda menemukan bug dalam kode Anda.
-* Jangan ragu untuk meminta bantuan dari programmer lain jika Anda membutuhkannya.
+* Gunakan debugger untuk membantu Kamu menemukan bug dalam kode Kamu.
+* Jangan ragu untuk meminta bantuan dari programmer lain jika Kamu membutuhkannya.
