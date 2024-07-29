@@ -34,13 +34,14 @@ void Electric::print_bill()
 
 int main()
 {
-  Electric e[10];
-  int i, cnt;
+  Electric electricy[10];
+  int i, count;
   cout << "\n Enter How Many Customers You Want? : ";
-  cin >> cnt;
-  for (i = 0; i < cnt; i++)
-    e[i].accept();
-  for (i = 0; i < cnt; i++)
-    e[i].print_bill();
+  cin >> count;
+  for (i = 0; i < count; i++)
+    electricy[i].accept();
+  for (i = 0; i < count; i++)
+    electricy[i].print_bill();
+
   return 0;
 }
