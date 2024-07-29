@@ -14,12 +14,12 @@ int main()
 
   int halip = 29;
 
-  int *bimba; // null
+  int *aaron; // null
 
-  bimba = &halip;
+  aaron = &halip;
 
-  cout << "Nilai pointer asli: " << bimba << endl;
-  cout << "Mengakses nilai alamat memorinya " << *bimba << endl;
+  cout << "Nilai pointer asli: " << aaron << endl;
+  cout << "Mengakses nilai alamat memorinya " << *aaron << endl;
 
   return 0;
 }
