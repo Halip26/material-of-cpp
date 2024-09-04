@@ -24,7 +24,7 @@ int main()
   while (true)
   {
     // Untuk pengguna menginput angkanya
-    cout << "Enter the number: " << endl;
+    cout << "\nEnter the number: " << endl;
     cin >> userInput;
 
     int cek_fibanocci = fibanocci(userInput);
