@@ -36,14 +36,13 @@ public:
 
 int main()
 {
-  Rectangle r;
-  cout << "length = " << r.length << endl;
-  cout << "breadth = " << r.breadth;
   Rectangle r(12.64, 7);
-  cout << "Area = " << r.Area();
+  cout << "length = " << r.length << endl;
+  cout << "breadth = " << r.breadth << endl;
+  cout << "Area = " << r.Area() << endl;
   Square s1(4.5);
   Square s2 = s1; // Copy constructor called
   cout << "side of 1st square = " << s1.side << endl;
-  cout << "side of 2nd square = " << s2.side;
+  cout << "side of 2nd square = " << s2.side << endl;
   return 0;
 }
