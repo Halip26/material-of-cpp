@@ -5,38 +5,31 @@ using namespace std;
 
 int main()
 {
-  fstream fio;
+  // Deklarasi variable untuk menyimpan nama file
+  string filename;
 
-  string line;
+  // meminta pengguna untuk memasukkan nama file
+  cout << "Masukkan nama file Anda: ";
+  cin >> filename;
 
-  fio.open("project2.txt", ios::trunc | ios::out | ios::in);
+  // membuka file yg telah diinput untuk dibaca
+  ifstream infile(filename.c_str());
 
-  cout << "\nEnter your text for file. To stop, type -1 in new line\n";
-  cout << "******************************************************\n";
-  while (fio)
+  // print lines using looping for
+  for (int i = 0; i <= 35; i++)
   {
-
-    getline(cin, line);
-
-    if (line == "-1")
-      break;
-
-    fio << line << endl;
+    cout << "-";
   }
+  cout << endl;
 
-  fio.seekg(0, ios::beg);
-  cout << "\nReading from the file\n";
-  cout << "*********************\n";
-  while (fio)
+  // membaca isi file & mencetaknya ke console
+  string line;
+  while (getline(infile, line))
   {
-
-    getline(fio, line);
     cout << line << endl;
   }
 
-  cout << "If you want to check the changes, you can download the file and see the change in it also.";
-
-  fio.close();
+  infile.close();
 
   return 0;
 }
