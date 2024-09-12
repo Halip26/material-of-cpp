@@ -52,5 +52,4 @@ File adalah bagian penting dari pemrograman C++. Dengan memahami cara bekerja de
 
 ## Referensi
 
-* C++ File I/O Tutorial: [URL yang tidak valid dihapus]
 * File Handling in C++: [https://www.programiz.com/cpp-programming/file-handling](https://www.programiz.com/cpp-programming/file-handling)
