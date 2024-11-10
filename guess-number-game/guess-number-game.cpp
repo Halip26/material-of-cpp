@@ -11,6 +11,7 @@ int main()
     string name;
 
     cout << "Welcome to Guess Number Game" << endl;
+
     // buat garis doang
     for (int i = 0; i <= 35; i++)
     {
