@@ -1,47 +1,60 @@
 import time
 
 username = "halip26"
-password = "halip123456"
-print(" ")
-time.sleep(1)
-username_input = str(input("Enter your username:"))
-time.sleep(1)
-password_input = str(input("Enter your password:"))
-time.sleep(1)
-confirm_password = str(input("Enter your password again:"))
+password = "belajarpython"
 
-print("-" * 40)
-if (
-    username == username_input
-    and password == password_input
-    and confirm_password == password_input
-):
+print("Welcome to the login page")
+while True:
     time.sleep(1)
-    print("Hii, Welcome to your account", username)
-elif (
-    username != username_input
-    and password == password_input
-    and confirm_password == password_input
-):
+    username_input = str(input("Enter your username: "))
     time.sleep(1)
-    print("Wrong username, Try again!")
-elif (
-    username == username_input
-    and password != password_input
-    and confirm_password == password_input
-):
+    password_input = str(input("Enter your password: "))
     time.sleep(1)
-    print("Wrong password, Try again!")
-elif password_input != confirm_password:
+    confirm_password = str(input("Confirm your password: "))
+
+    print("-" * 35)
+    print("Checking your credentials...")
     time.sleep(1)
-    print("Confirm password doesn't match, Try again!")
-else:
+    print("Please wait...")
     time.sleep(1)
-    print(
-        "Username:",
-        username_input,
-        "&",
-        "Password:",
-        password_input,
-        "Are not exists, Try again!",
-    )
+
+    # this one for success login
+    if (
+        username_input == username
+        and password_input == password
+        and confirm_password == password
+    ):
+        print("\nLogin successful")
+        print(f"Welcome,  {username_input}!")
+        break
+    # wrong username
+    elif (
+        (username_input != username)
+        and (password_input == password)
+        and (password_input == confirm_password)
+    ):
+        time.sleep(1)
+        print("\nUsername is incorrect")
+        print("Please try again")
+    # wrong password
+    elif (
+        (username_input == username)
+        and (password_input != password)
+        and (password_input == confirm_password)
+    ):
+        time.sleep(1)
+        print("\nPassword is incorrect")
+        print("Please try again")
+    # wrong confirm password
+    elif (
+        (username_input == username)
+        and (password_input == password)
+        and (password_input != confirm_password)
+    ):
+        time.sleep(1)
+        print("\nConfirm password is incorrect")
+        print("Please try again")
+    else:
+        time.sleep(1)
+        print("\nSomething is wrong")
+        print("Please try again")
