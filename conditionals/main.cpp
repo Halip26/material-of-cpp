@@ -1,38 +1,79 @@
 #include <iostream>
 #include <string>
+#include <windows.h>
+
 using namespace std;
 
 int main()
 {
+   // initialize variables with value
+   string userName = "halip26";
+   string password = "belajarC++";
 
-  // initialize variables with value
-  string username = "Brightchamps";
-  string password = "hari_rabu";
+   // multiple initialization
+   string inputUserName, inputPassword, inputConfirmPassword;
 
-  // bss stands for block started by symbol
-  string uname_input, pass_input;
+   cout << "Welcome to the login page" << endl;
+   while (true)
+   {
+      // create lines using looping for
+      for (int i = 0; i <= 30; i++)
+      {
+         cout << "-";
+      }
+      cout << endl;
 
-  cout << "Enter your username: ";
-  cin >> uname_input;
-  cout << "Enter your password: ";
-  cin >> pass_input;
+      // ask user to input the username
+      cout << "Enter your username: ";
+      cin >> inputUserName;
+      cout << "Enter your password: ";
+      cin >> inputPassword;
+      cout << "Confirm your password: ";
+      cin >> inputConfirmPassword;
 
-  if (username == uname_input && password == pass_input)
-  {
-    cout << "Hi & welcome to your account! " << username << endl;
-  }
-  else if (username != uname_input && password == pass_input)
-  {
-    cout << "Wrong username. Try again!\n ";
-  }
-  else if (username == uname_input && password != pass_input)
-  {
-    cout << "Wrong password. Try again!\n";
-  }
-  else
-  {
-    cout << "Username & Password doesn't exist\n";
-  }
+      // check if the input is correct
+      Sleep(500);
+      cout << "Checking your input..." << endl;
+      Sleep(500);
+      cout << "Please wait..." << endl;
+      Sleep(500);
+      cout << "Checking credentials..." << endl;
 
-  return 0;
+      // check if the input is correct
+      if (inputUserName == userName && inputPassword == password && inputConfirmPassword == password)
+      {
+         Sleep(500);
+         cout << "\nYou have successfully logged in" << endl;
+         cout << "Hii, " << "Welcome to your account " << userName << endl;
+         break;
+      }
+      // if username is incorrect but password & confirm password correct
+      else if (inputUserName != userName && inputPassword == password && inputConfirmPassword == password)
+      {
+         Sleep(500);
+         cout << "\nYou have entered the wrong username" << endl;
+         cout << "Please, try again!" << endl;
+      }
+      // if password is incorrect but username & confirm password correct
+      else if (inputUserName == userName && inputPassword != password && inputConfirmPassword == password)
+      {
+         Sleep(500);
+         cout << "\nYou have entered the wrong password" << endl;
+         cout << "Please, try again!" << endl;
+      }
+      // if confirm password is incorrect but username & password correct
+      else if (inputUserName == userName && inputPassword == password && inputConfirmPassword != password)
+      {
+         Sleep(500);
+         cout << "\nYou have entered the wrong confirm password" << endl;
+         cout << "Please, try again!" << endl;
+      }
+      else
+      {
+         Sleep(500);
+         cout << "\nYou have entered the wrong credentials" << endl;
+         cout << "Please, try again!" << endl;
+      }
+   }
+   return 0;
 }
