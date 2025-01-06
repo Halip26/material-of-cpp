@@ -1,9 +1,10 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
-// Fungsi rekursif untuk menghitung faktorial number
-int faktorial(int n)
+// function to rekursif
+int factorial(int n)
 {
   if (n <= 1)
   {
@@ -11,7 +12,8 @@ int faktorial(int n)
   }
   else
   {
-    return n * faktorial(n - 1);
+    // this is recursion arya call itself inside its body
+    return n * factorial(n - 1);
   }
 }
 
@@ -21,26 +23,25 @@ int main()
 
   while (true)
   {
-
-    // Untuk pengguna menginput angkanya
-    cout << "\nEnter the number: " << endl;
+    // for user to input the number
+    cout << "\nEnter your number: " << endl;
     cin >> userInput;
 
-    for (int i = 0; i <= 40; i++)
-    {
-      cout << "-";
-    }
-    cout << endl;
+    // just create lines
+    cout << string(25, '-') << endl;
 
-    int cek_factorial = faktorial(userInput);
+    // connected to factorial function
+    int cek_factorial = factorial(userInput);
+
+    // to cek using if statement
     if (userInput <= 1)
     {
-      cout << "Invalid input!\nYou've exited the program" << endl;
+      cout << "Invalid input! \nYou have exited the program" << endl;
       break;
     }
     else
     {
-      cout << "Faktorial dari " << userInput << " adalah: " << cek_factorial << endl;
+      cout << "Faktorial from " << userInput << " is " << cek_factorial << endl;
     }
   }
 
