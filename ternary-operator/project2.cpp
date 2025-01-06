@@ -1,4 +1,4 @@
-//overspeeding evaluation program
+// overspeeding evaluation program
 #include <iostream>
 #include <string>
 using namespace std;
