@@ -2,7 +2,8 @@
 #include <string>
 using namespace std;
 
-int main() {
+int main()
+{
   double examValue;
 
   cout << "Enter your Exam Value: ";
@@ -17,9 +18,12 @@ int main() {
   cout << "--------------------------" << endl;
   cout << "This using if statement: " << endl;
 
-  if (examValue >= 40) {
+  if (examValue >= 40)
+  {
     cout << "You passed the exam." << endl;
-  } else {
+  }
+  else
+  {
     cout << "You failed the exam." << endl;
   }
 
