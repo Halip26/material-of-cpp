@@ -25,8 +25,7 @@ bool isPalindrome(const string &word)
     int length = reversedStr.length();
 
     // Menginisialisasi indeks untuk karakter pertama dan terakhir
-    int i, j;
-    for (i = 0, j = length - 1; i < j; i++, j--)
+    for (int i = 0, j = length - 1; i < j; i++, j--)
     {
         // Membandingkan karakter dari kedua ujung
         if (reversedStr[i] != reversedStr[j])
@@ -54,7 +53,7 @@ int main()
             break;
         }
         // mengecek apakah kata adalah palindrome
-        if (isPalindrome(kata))
+        else if (isPalindrome(kata))
         {
             cout << kata << " adalah palindrome" << endl;
         }
