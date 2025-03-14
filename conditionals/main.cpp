@@ -40,7 +40,7 @@ int main()
       cout << "Checking credentials..." << endl;
 
       // check if the input is correct
-      if (inputUserName == userName && inputPassword == password && inputConfirmPassword == password)
+      if (inputUserName == userName && inputPassword == password && inputConfirmPassword == inputPassword)
       {
          Sleep(500);
          cout << "\nYou have successfully logged in" << endl;
@@ -48,21 +48,21 @@ int main()
          break;
       }
       // if username is incorrect but password & confirm password correct
-      else if (inputUserName != userName && inputPassword == password && inputConfirmPassword == password)
+      else if (inputUserName != userName && inputPassword == password && inputConfirmPassword == inputPassword)
       {
          Sleep(500);
          cout << "\nYou have entered the wrong username" << endl;
          cout << "Please, try again!" << endl;
       }
       // if password is incorrect but username & confirm password correct
-      else if (inputUserName == userName && inputPassword != password && inputConfirmPassword == password)
+      else if (inputUserName == userName && inputPassword != password && inputConfirmPassword == inputPassword)
       {
          Sleep(500);
          cout << "\nYou have entered the wrong password" << endl;
          cout << "Please, try again!" << endl;
       }
       // if confirm password is incorrect but username & password correct
-      else if (inputUserName == userName && inputPassword == password && inputConfirmPassword != password)
+      else if (inputUserName == userName && inputPassword == password && inputConfirmPassword != inputPassword)
       {
          Sleep(500);
          cout << "\nYou have entered the wrong confirm password" << endl;
